@@ -1,0 +1,18 @@
+Quick Reference
+
+    Breakpoints
+        https://mui.com/material-ui/customization/breakpoints/
+
+        {xs: sm: md: lg: xl:}
+
+        
+        [theme.breakpoints.up('md')]: {
+          backgroundColor: 'red',
+        },
+    
+    <CssBaseline>
+      https://mui.com/material-ui/react-css-baseline/
+      removes margins & other MUI default styles
+
+
+

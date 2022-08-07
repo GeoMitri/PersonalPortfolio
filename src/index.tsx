@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './Maintenance/reportWebVitals';
+import Album from './PlayAround/Album';
 //fONTS
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Album from './Album';
 
 
 const root = ReactDOM.createRoot(
@@ -16,7 +15,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Album />
+    <App /*Album*/ />
   </React.StrictMode>
 );
 
