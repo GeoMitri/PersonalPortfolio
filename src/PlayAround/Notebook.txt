@@ -14,5 +14,15 @@ Quick Reference
       https://mui.com/material-ui/react-css-baseline/
       removes margins & other MUI default styles
 
+    <Typography>
+      https://mui.com/material-ui/api/typography/
+      I don't know why gutterBottom also stops text overflow 
+        Nevermind its not
+
+    <Grid>
+      "justifyContent" and "alignItems" 
+        refer to the object's "direction" prop
+        need "container" prop (not "item")
+
 
 

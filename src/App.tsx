@@ -1,5 +1,5 @@
 //Components
-import { Introduction } from './Components/Home Page/Introduction';
+import { Introduction } from './Components/HomePage/Introduction';
 //Style
 import X from './PlayAround/GlobalStyling';
 //MUI
