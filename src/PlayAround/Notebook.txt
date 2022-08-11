@@ -1,28 +1,38 @@
 Quick Reference
 
-    Breakpoints
-        https://mui.com/material-ui/customization/breakpoints/
+  Breakpoints
+      https://mui.com/material-ui/customization/breakpoints/
 
-        {xs: sm: md: lg: xl:}
+      {xs: sm: md: lg: xl:}
 
-        
-        [theme.breakpoints.up('md')]: {
-          backgroundColor: 'red',
-        },
-    
-    <CssBaseline>
-      https://mui.com/material-ui/react-css-baseline/
-      removes margins & other MUI default styles
+      
+      [theme.breakpoints.up('md')]: {
+        backgroundColor: 'red',
+      },
+  
+  <CssBaseline>
+    https://mui.com/material-ui/react-css-baseline/
+    removes margins & other MUI default styles
 
-    <Typography>
-      https://mui.com/material-ui/api/typography/
-      I don't know why gutterBottom also stops text overflow 
-        Nevermind its not
+  <Typography>
+    https://mui.com/material-ui/api/typography/
+    I don't know why gutterBottom also stops text overflow 
+      Nevermind its not
 
-    <Grid>
-      "justifyContent" and "alignItems" 
-        refer to the object's "direction" prop
-        need "container" prop (not "item")
+  <Grid>
+    "justifyContent" and "alignItems" 
+      refer to the object's "direction" prop
+      need "container" prop (not "item")
+    Consider "columnGap" / "rowGap" props for content spacing
+
+Todo
+
+  Navbar
+    Add CV
+  Home
+    Section 1
+      Add a collage of my work in the background
+
 
 
 
