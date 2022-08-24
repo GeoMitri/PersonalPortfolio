@@ -1,3 +1,4 @@
+import {Route, Routes } from "react-router-dom";
 //Components
 import { Introduction } from './Components/HomePage/Introduction';
 //Style
@@ -6,7 +7,7 @@ import X from './PlayAround/GlobalStyling';
 import Button from "@mui/material/Button";
 import ResponsiveAppBar from './Components/Navbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { Projects } from "./Components/Projects/Projects";
 
 const theme = createTheme({
   palette: {
@@ -23,20 +24,10 @@ function App() {
   return (
     <div className="App">
       <ResponsiveAppBar/>
-      <Introduction></Introduction>
-      {/* <Thing />
-      <div>
-      <button>dsfdsf</button>
-      <X.Button>ddsfdfsffs</X.Button>
-      </div>
-      <X.Div>
-      <button>dsfdsf</button>
-      <X.Button>ddsfdfsffs</X.Button>
-      <Button variant="text">sdafsaf</Button>
-      <Button variant="outlined" disabled>sddd</Button>
-      </X.Div>
-      <Button variant="contained">sfff</Button> */}
-
+      <Routes>
+        <Route path="/" element={<Introduction/>}/>
+        <Route path="/Projects" element={<Projects />}/>
+      </Routes>
     </div>
     
   );

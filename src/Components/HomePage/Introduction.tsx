@@ -6,16 +6,20 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 
 const achievements = [{"name":"test1"},{"name":"test2"},{"name":"test3"}];
-const listItems = achievements.map((a) => <li key={a.name}>{a.name}</li>);
+// const listItems = achievements.map((a) => <li key={a.name}>{a.name}</li>);
 
 const myAchievements = [
-    ["Formally Trained","Graduate with a Bachelor of Science in Games Development."],
-    ["Mathematical!","Recieve the 2019 Best Student Research Games Project for the educational game project GridBlade."],
+    ["Officially Qualified","Graduate with a Bachelor of Science in Games Development."],
+    ["Mathematical!","Recieve the Best Student Research Games Project Award for the educational game project GridBlade."],
     ["Sole Developer","Ship and commercialise the puzzle game Stepping Stones on Android and iOS platforms in a solo team."],
+    ["Serious about Fun","Design and Develop 5 Serious Game projects."],
     ["Unified","Develop games and interactive software using Unity3D for 8+ years."],
+    ["Learning Complete","Understand everything there is to know about game design and development"],
+    // ["Partied Up","Work on a serious game in a team of other experienced game designers or game developers"],
+    // ["Unreal Possibilities","Develop a game using Unreal."],
 ]
 const achievementCards = myAchievements.map((achievement) =>
-    <Card sx={{ width: 400}}>
+    <Card sx={{height: 175, width: 400}}>
         <CardContent>
             <Typography gutterBottom variant="h5" component="div">
             {achievement[0]}
@@ -65,7 +69,7 @@ export const Introduction = () => {
                                 <Typography>
                                     {/* I make stuff! */}
                                 </Typography>
-                                <Button sx={{backgroundColor:"thistle"}}>
+                                <Button href="/Projects" sx={{backgroundColor:"thistle"}}>
                                     View Projects
                                 </Button>
                             </Grid>
