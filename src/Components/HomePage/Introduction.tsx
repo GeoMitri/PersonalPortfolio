@@ -38,7 +38,7 @@ const achievementCards = myAchievements.map((achievement) =>
 export const Introduction = () => {
     return (
             <Box bgcolor="secondary.main" sx={{display: 'flex', flexWrap: "nowrap",}}>
-                    <Grid container direction="row" justifyContent="flex-start" alignItems="center" margin={1}>
+                    <Grid container direction="row" justifyContent="flex-start" alignItems="center" margin={3}>
                         <Grid item xs={7} sx={{backgroundColor:"blanchedalmond"}}>
                             <Typography variant="h1"> 
                             Hi!
