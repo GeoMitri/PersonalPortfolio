@@ -63,7 +63,8 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  href= {"/"+page.toString()} //Todo: Fix "/Home"
+                  href={"/"+page.toString()} //Todo: Fix "/Home"
+                  
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
