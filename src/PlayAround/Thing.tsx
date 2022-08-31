@@ -1,7 +1,3 @@
 export const Thing = () => {
-    return (
-        <div>
-            AAAAAAAAAAAAAA
-        </div>
-    )
-}
+  return <div>AAAAAAAAAAAAAA</div>;
+};
