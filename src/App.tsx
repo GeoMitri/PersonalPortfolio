@@ -1,11 +1,11 @@
 import {Route, Routes } from "react-router-dom";
 //Components
-import { Introduction } from './Components/HomePage/Introduction';
+import { Home } from './Components/Home/Home';
 //Style
 import X from './PlayAround/GlobalStyling';
 //MUI
 import Button from "@mui/material/Button";
-import ResponsiveAppBar from './Components/Navbar';
+import ResponsiveAppBar from './Components/Generic/Navbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Projects } from "./Components/Projects/Projects";
 
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <ResponsiveAppBar/>
       <Routes>
-        <Route path="/" element={<Introduction/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/Projects" element={<Projects />}/>
       </Routes>
     </div>

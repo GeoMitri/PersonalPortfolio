@@ -28,13 +28,14 @@ Quick Reference
   href
     external links need "https:// ..."
 
+  types folder 
+    https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module
+    I need that file to use images as modules (import _ from _.jpg)
+
+
 Todo
   Navbar
     Add CV
   Home
     Section 1
       Add a collage of my work in the background
-
-
-
-

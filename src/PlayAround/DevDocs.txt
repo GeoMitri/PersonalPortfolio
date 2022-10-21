@@ -1,0 +1,32 @@
+Dev Docs
+
+    Project Conventions
+        Folder structure
+            components
+                folders for diplayable stuff for pages
+                Each folder contains:
+                        1 page component 
+                            named after the folder
+                            hosts other components in the folder
+                            should have close-to nothing but components
+                        0-M content components
+                            name begins with the page name
+                            used for the page into the page 
+            data
+                written static info fed into components
+                .ts
+                return val is always CAPITALISED
+            objects
+                class-like structures (typically interfaces) used by components
+            utils
+                useful code snippets that help me build components
+            playaround
+                notes for myself
+
+
+                  
+    Extensions
+        TODOs
+            lists todo (please use)
+        GitLens
+            highlights git changes per line
