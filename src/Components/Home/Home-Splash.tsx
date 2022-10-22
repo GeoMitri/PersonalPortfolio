@@ -1,7 +1,8 @@
 import { Typography, Grid } from "@mui/material";
 import CardMedia from '@mui/material/CardMedia';
 
-const splash = 
+/**First eye-catching cover section of Home */
+const Splash = 
     <>
         <Grid item xs={7} sx={{backgroundColor:"blanchedalmond"}}>
             <Typography variant="h1"> 
@@ -29,4 +30,4 @@ const splash =
         </Grid>
     </>;
 
-export default splash;
+export default Splash;

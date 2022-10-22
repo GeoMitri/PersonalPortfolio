@@ -4,8 +4,11 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import ACHIEVEMENTS from "../../Data/AchievementsData";
 
-
-const achievementCards = ACHIEVEMENTS.map((achievement) =>
+/**List of cards for each achievement.
+ * Feeds AcheivementData.tsx into sections
+ * Placed into grid in Home.tsx  
+ */
+const AchievementCards = ACHIEVEMENTS.map((achievement) =>
     <Card sx={{height: 175, width: 400}}>
         <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -22,4 +25,4 @@ const achievementCards = ACHIEVEMENTS.map((achievement) =>
     </Card>
 );
 
-export default achievementCards;
+export default AchievementCards;

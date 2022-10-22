@@ -28,10 +28,13 @@ Quick Reference
   href
     external links need "https:// ..."
 
+  Struturing Data
+    can export all consts separately OR
+    Make 1 const list of all values of types of values
+
   types folder 
     https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module
     I need that file to use images as modules (import _ from _.jpg)
-
 
 Todo
   Navbar

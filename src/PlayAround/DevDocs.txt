@@ -17,7 +17,7 @@ Dev Docs
                 .ts
                 return val is always CAPITALISED
             objects
-                class-like structures (typically interfaces) used by components
+                class-like structures (typically interfaces) used by Data or Components
             utils
                 useful code snippets that help me build components
             playaround

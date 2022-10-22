@@ -1,6 +1,10 @@
 import { Grid, Button, Typography } from "@mui/material";
 
-const actionItems = 
+/**Section of quick in-line interactables: 
+ *  Projects
+ *  CV
+*/
+const ActionItems = 
     <>
         <Grid container xs={12}
         direction="row" justifyContent="center" alignItems="center"
@@ -27,4 +31,4 @@ const actionItems =
         </Grid>
     </>;
 
-export default actionItems;
+export default ActionItems;

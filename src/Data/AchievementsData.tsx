@@ -1,4 +1,4 @@
-const test: {key: string, desc: string}[] = [
+const ACHIEVEMENTS: {key: string, desc: string}[] = [
     {
         key: 'Officially Qualified', 
         desc: 'Graduate with a Bachelor of Science in Games Development.',
@@ -25,4 +25,4 @@ const test: {key: string, desc: string}[] = [
     },
 ];
 
-export default test;
+export default ACHIEVEMENTS;

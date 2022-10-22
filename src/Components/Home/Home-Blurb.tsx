@@ -1,8 +1,8 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Grid } from '@mui/material';
-import CardMedia from '@mui/material/CardMedia';
 
-const blurb = 
+/**Section of text exploring my deets further*/
+const Blurb = 
     <>
         <Grid item xs={12} sx={{backgroundColor:"turquoise"}}>
 
@@ -32,4 +32,4 @@ const blurb =
     </>;
 
 
-export default blurb;
+export default Blurb;
