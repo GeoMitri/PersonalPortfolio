@@ -1,12 +1,17 @@
 import { Grid, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { Tag } from "../../Objects/Interfaces";
 
+
+/** UI for modifying activeTags
+ * Used in Projects.tsx to filter displayed projects
+ * Requires tags, modifies activeTags, calls onFilterChange
+ */
 function FilterSelect(myTags : Tag[], activeTags : (Tag[] | null), onFilterChange : any) {
     return(<>
         {/* Debug selection */}
-        <Grid item xs={12} sx={{backgroundColor:"aliceblue"}}>
+        {/* <Grid item xs={12} sx={{backgroundColor:"aliceblue"}}>
             {activeTags?.map((tag) => tag.name)}
-        </Grid>
+        </Grid> */}
 
         <Grid item xs={12} sx={{backgroundColor:"blanchedalmond"}}>
             <ToggleButtonGroup

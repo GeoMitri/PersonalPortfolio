@@ -30,7 +30,7 @@ Quick Reference
 
   Struturing Data
     can export all consts separately OR
-    Make 1 const list of all values of types of values
+    Make 1 const list of all values of types of value
 
   types folder 
     https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module

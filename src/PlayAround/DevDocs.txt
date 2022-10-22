@@ -4,6 +4,7 @@ Dev Docs
         Folder structure
             components
                 folders for diplayable stuff for pages
+                Capitalised files
                 Each folder contains:
                         1 page component 
                             named after the folder
@@ -15,7 +16,7 @@ Dev Docs
             data
                 written static info fed into components
                 .ts
-                return val is always CAPITALISED
+                return val is always ALLCAPITALISED
             objects
                 class-like structures (typically interfaces) used by Data or Components
             utils

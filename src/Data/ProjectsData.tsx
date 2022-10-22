@@ -5,21 +5,21 @@ export const GridBlade : Project = {
     name: "GridBlade",
     description: "This is Grid Blade",
     tags: [TAGS.Playable],
-    backgroundImage: ""
+    backgroundImage: "/images/other.jpg"
 }
 
 export const SteppingStones : Project = {
     name: "Stepping Stones",
     description: "This is Stepping Stones",
     tags: [TAGS.Shipped],
-    backgroundImage: ""
+    backgroundImage: "/images/ss3.jpg"
 }
 
 export const SmartStep : Project = {
     name: "Smart±Step",
     description: "",
     tags: [TAGS.Serious, TAGS.Shipped],
-    backgroundImage: ""
+    backgroundImage: "/images/other.jpg"
 }
 
 export const ChoiceStepper : Project = {
@@ -33,7 +33,7 @@ export const SallysApples : Project = {
     name: "Sally's Apples",
     description: "",
     tags: [TAGS.Serious],
-    backgroundImage: ""
+    backgroundImage: "/other.jpg"
 }
 
 export const LastIsland : Project = {
