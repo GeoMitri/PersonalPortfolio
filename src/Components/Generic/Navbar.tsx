@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import CssBaseline from '@mui/material/CssBaseline';
 
-const pages = ['Home', 'Projects', 'Contact'];
+const pages = ['Home', 'Projects', 'Contact', 'testing'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -63,7 +63,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  href={"/"+page.toString()} //Todo: Fix "/Home"
+                  href={(page === "Home") ? "/" : "/"+page.toString()} //Todo: Fix "/Home"
                   
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}

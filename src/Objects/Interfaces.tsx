@@ -12,7 +12,9 @@ export interface Tag {
 
 export interface Project {
     name: string;
-    description: string;
+    subtitle: string;
     tags: Tag[];
-    backgroundImage: string; //??
+    backgroundImage: string;
+
+    about: string;
 }

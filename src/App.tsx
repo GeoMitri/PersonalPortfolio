@@ -9,6 +9,10 @@ import ResponsiveAppBar from './Components/Generic/Navbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Projects } from "./Components/Projects/Projects";
 
+import ProjectTemplate from "./Components/Project/ProjectTemplate";
+import * as PROJECTS_DATA from "./Data/ProjectsData";
+import * as TAGS_DATA from "./Data/ProjectTagsData";
+import Contact from "./Components/Contact/Contact";
 const theme = createTheme({
   palette: {
     primary: {
@@ -27,6 +31,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Projects" element={<Projects />}/>
+        
+        {/* temp used for ProjectTemplate */}
+        <Route path="/Contact" element={<Contact/>}/> 
+        
+        <Route path="/Testing" element={<ProjectTemplate {...PROJECTS_DATA.GridBlade}/>}/> 
       </Routes>
     </div>
     
