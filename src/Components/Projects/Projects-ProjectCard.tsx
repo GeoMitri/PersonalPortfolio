@@ -4,19 +4,23 @@ import { Card, CardActionArea, CardContent, CardMedia, Chip, Icon, Typography} f
 
 /** Displayable card per project 
  * Iterated over in Projects.tsx*/
-function ProjectCard(project:Project) { 
+
+ interface projectCardProps{
+    projectRef:Project
+ }
+function ProjectCard(props:projectCardProps) { 
     
     const [color, setColor] = useState("Aquamarine");
 
     return(
-        <Card key={project.name} sx={{height: 400, width: 400, backgroundColor: "DarkSlateBlue"}}
+        <Card key={props.projectRef.name} sx={{height: 400, width: 400, backgroundColor: "DarkSlateBlue"}}
             onMouseOver={() => setColor("Turquoise")}
             onMouseOut={() => setColor("Aquamarine")}
         >
                 <CardActionArea sx={{position: 'relative', height: 400, width: 400,backgroundColor: "gold"}}>
                     <CardMedia
                         component="img"
-                        image={project.backgroundImage}
+                        image={props.projectRef.backgroundImage}
                         alt="test"
                         sx={{position:"absolute", top: 0}}
                     />
@@ -25,13 +29,13 @@ function ProjectCard(project:Project) {
                         <Typography>
                         </Typography>
                         <Typography variant="h5" gutterBottom component="div">
-                            {project.name}
+                            {props.projectRef.name}
                         </Typography>
-                        {project.tags.map((tag) => 
+                        {props.projectRef.tags.map((tag) => 
                             <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />
                             )}
                         <Typography paddingTop={2} variant="body2" color="text.secondary">
-                            {project.subtitle}
+                            {props.projectRef.subtitle}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

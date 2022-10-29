@@ -35,7 +35,14 @@ Quick Reference
   Struturing Data folder
     can export all consts separately OR
     Make 1 const list of all values of types of value
-
+    
+  Function Compoment props
+    Parameters of Function Components are typically 1
+      This is what is expected if the FC is being instantiated elsewhere
+      Otherwise you get 1 level down of missing props
+    ALWAYS instantiate FCs like <This /> and not This()
+      Avoids "Rendered fewer hooks than expected" error
+        https://medium.com/@jonchurch/how-to-fix-react-error-rendered-fewer-hooks-than-expected-e6a378985d3c
 
   types folder 
     https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module

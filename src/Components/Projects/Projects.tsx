@@ -40,27 +40,32 @@ export const Projects = () => {
     ) => {
         if(newTags !== null){
             setActiveTags(newTags);
-            // console.log(activeTags);
-    
+            //console.log(activeTags);
+
             const newDisplayedProjects = myProjects.filter((project) => 
-                project.tags.some((tag) => newTags?.includes(tag)));
-                    
+            project.tags.some((tag) => newTags?.includes(tag)));
+
+            //TODO: runtime errors caused here
             setDisplayedProjects(newDisplayedProjects);            
+            
+            console.log(newDisplayedProjects);
+            console.log(myProjects);
+            console.log(displayedProjects);
         }
     };
-  
     return (
         <Box bgcolor="secondary.main" sx={{display: 'flex', flexWrap: "nowrap",}}>
             <Grid container direction="row" justifyContent="flex-start" alignItems="left" margin={3}>
                 
                 {/* fliter */}
-                {FilterSelect(myTags, activeTags, onFilterChange)}
+                <FilterSelect tagsCollection={myTags} currentTags={activeTags} onChangeFunction={onFilterChange}/>
 
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="center"
                 rowGap={4} columnGap={8} margin={3} sx={{ backgroundColor:"magenta" }}>
-
-                    {displayedProjects?.map((project) => ProjectCard(project))}
+                    
+                    {/* {displayedProjects?.map((project) => ProjectCard(project))} */}
+                    {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
 
                 </Grid>
 
