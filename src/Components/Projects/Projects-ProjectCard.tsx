@@ -4,23 +4,22 @@ import { Card, CardActionArea, CardContent, CardMedia, Chip, Icon, Typography} f
 
 /** Displayable card per project 
  * Iterated over in Projects.tsx*/
-
  interface projectCardProps{
-    projectRef:Project
+    projectRef:[string, Project]
  }
 function ProjectCard(props:projectCardProps) { 
     
     const [color, setColor] = useState("Aquamarine");
 
     return(
-        <Card key={props.projectRef.name} sx={{height: 400, width: 400, backgroundColor: "DarkSlateBlue"}}
+        <Card key={props.projectRef[1].name} sx={{height: 400, width: 400, backgroundColor: "DarkSlateBlue"}}
             onMouseOver={() => setColor("Turquoise")}
             onMouseOut={() => setColor("Aquamarine")}
         >
-                <CardActionArea sx={{position: 'relative', height: 400, width: 400,backgroundColor: "gold"}}>
+                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: 400, width: 400,backgroundColor: "gold"}}>
                     <CardMedia
                         component="img"
-                        image={props.projectRef.backgroundImage}
+                        image={props.projectRef[1].backgroundImage}
                         alt="test"
                         sx={{position:"absolute", top: 0}}
                     />
@@ -29,13 +28,13 @@ function ProjectCard(props:projectCardProps) {
                         <Typography>
                         </Typography>
                         <Typography variant="h5" gutterBottom component="div">
-                            {props.projectRef.name}
+                            {props.projectRef[1].name}
                         </Typography>
-                        {props.projectRef.tags.map((tag) => 
+                        {props.projectRef[1].tags.map((tag) => 
                             <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />
                             )}
                         <Typography paddingTop={2} variant="body2" color="text.secondary">
-                            {props.projectRef.subtitle}
+                            {props.projectRef[1].subtitle}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

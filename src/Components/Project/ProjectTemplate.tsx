@@ -15,18 +15,19 @@ function ProjectTemplate(project :Project) {
                     sx={{maxWidth:400}}/>  
                 </Grid>
 
-                <Grid item xs={12} display="flex" sx={{backgroundColor:"teal"}} direction="column">
-                    <Typography align="center" variant="h1"> 
+                <Grid item xs={12} display="flex" alignItems={"center"} sx={{backgroundColor:"teal"}} direction="column">
+                    <Typography variant="h1"> 
                         {project.name}
                     </Typography>
 
-                    <Typography align="center" variant="h2"> 
+                    <Typography variant="h2"> 
                         {project.subtitle}
                     </Typography>
+ 
+                    <Grid container xs={12} sx={{backgroundColor:"azure"}} direction="row" justifyContent="center" alignItems="center">  
+                        {project.tags.map((tag) => <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />)}
+                    </Grid>
 
-                    {project.tags.map((tag) => 
-                        <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />
-                    )}
                 </Grid>
 
                 <Grid container xs={12} sx={{backgroundColor:"gold"}} direction="column" justifyContent="center" alignItems="center">

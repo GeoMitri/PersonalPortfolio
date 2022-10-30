@@ -3,7 +3,9 @@ import { Box, Button, Grid, TextField, CircularProgress, Snackbar, Alert, AlertC
 import emailjs from '@emailjs/browser';
 import SendIcon from '@mui/icons-material/Send';
 
-
+/** My socials + email me via email.js 
+ * TODO: Socials buttons
+*/
 function Contact() { 
     
     const myForm = useRef();

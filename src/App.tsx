@@ -13,6 +13,8 @@ import ProjectTemplate from "./Components/Project/ProjectTemplate";
 import * as PROJECTS_DATA from "./Data/ProjectsData";
 import * as TAGS_DATA from "./Data/ProjectTagsData";
 import Contact from "./Components/Contact/Contact";
+import { Project } from "./Objects/Interfaces";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -22,20 +24,22 @@ const theme = createTheme({
     },
   },  
 });
-
-
+  
 function App() {
-  return (
+
+    const myProjects : [string, Project][] = Object.entries(PROJECTS_DATA);
+
+    return (
     <div className="App">
       <ResponsiveAppBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Projects" element={<Projects />}/>
-        
-        {/* temp used for ProjectTemplate */}
+        {myProjects.map((proj) => <Route path={"/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
+
         <Route path="/Contact" element={<Contact/>}/> 
-        
-        <Route path="/Testing" element={<ProjectTemplate {...PROJECTS_DATA.GridBlade}/>}/> 
+        {/* temp used for ProjectTemplate */}
+        {/* <Route path="/Testing" element={<ProjectTemplate {...PROJECTS_DATA.GridBlade}/>}/>  */}
       </Routes>
     </div>
     

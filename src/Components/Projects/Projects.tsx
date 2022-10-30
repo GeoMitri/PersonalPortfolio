@@ -6,31 +6,14 @@ import { Tag, Project } from "../../Objects/Interfaces";
 import ProjectCard from "./Projects-ProjectCard";
 import FilterSelect from "./Projects-FilterSelect";
 
-const myProjects : Project[] = Object.values(DATA); 
+const myProjects : [string, Project][] = Object.entries(DATA); 
 const myTags : Tag[] = Object.values(TAGS); 
-
-// const styles = {
-//     media: {
-//        height: 0,
-//        paddingTop: '56.25%' // 16:9
-//     },
-//     card: {
-//        position: 'relative',
-//     },
-//     overlay: {
-//        position: 'absolute',
-//        top: '20px',
-//        left: '20px',
-//        color: 'black',
-//        backgroundColor: 'white'
-//     }
-// }
 
 /** Page for list all viewable projects
  * Filter via tags */
 export const Projects = () => {
     
-    const [displayedProjects, setDisplayedProjects] = useState<Project[] | null>(myProjects);
+    const [displayedProjects, setDisplayedProjects] = useState<[string, Project][] | null>(myProjects);
     const [activeTags, setActiveTags] = useState<Tag[] | null>(myTags);
 
     // Change displayed projects using activeTags
@@ -40,19 +23,14 @@ export const Projects = () => {
     ) => {
         if(newTags !== null){
             setActiveTags(newTags);
-            //console.log(activeTags);
 
             const newDisplayedProjects = myProjects.filter((project) => 
-            project.tags.some((tag) => newTags?.includes(tag)));
+            project[1].tags.some((tag) => newTags?.includes(tag)));
 
-            //TODO: runtime errors caused here
-            setDisplayedProjects(newDisplayedProjects);            
-            
-            console.log(newDisplayedProjects);
-            console.log(myProjects);
-            console.log(displayedProjects);
+            setDisplayedProjects(newDisplayedProjects);
         }
     };
+
     return (
         <Box bgcolor="secondary.main" sx={{display: 'flex', flexWrap: "nowrap",}}>
             <Grid container direction="row" justifyContent="flex-start" alignItems="left" margin={3}>
@@ -66,7 +44,6 @@ export const Projects = () => {
                     
                     {/* {displayedProjects?.map((project) => ProjectCard(project))} */}
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
-
                 </Grid>
 
             </Grid>
