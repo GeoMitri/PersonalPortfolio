@@ -37,9 +37,9 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <CssBaseline>
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{height: 70}}>
           <Toolbar disableGutters>
             {/* Desktop */}
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}

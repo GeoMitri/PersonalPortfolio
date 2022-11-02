@@ -1,10 +1,11 @@
 import { Typography, Grid } from "@mui/material";
 import CardMedia from '@mui/material/CardMedia';
+import useWindowDimensions from "../../Objects/windowDimensions";
 
 /**First eye-catching cover section of Home */
 const Splash = 
     <>
-        <Grid item xs={7} sx={{backgroundColor:"blanchedalmond"}}>
+        <Grid container direction="column" justifyContent="center" alignItems="baseline" xs={7} sx={{backgroundColor:"blanchedalmond"}}>
             <Typography variant="h1"> 
             Hi!
             </Typography>
