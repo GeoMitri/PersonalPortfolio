@@ -41,9 +41,9 @@ export const Projects = () => {
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="center"
                 rowGap={4} columnGap={8} margin={3} sx={{ backgroundColor:"magenta" }}>
-                    
-                    {/* {displayedProjects?.map((project) => ProjectCard(project))} */}
+
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
+                    
                 </Grid>
 
             </Grid>

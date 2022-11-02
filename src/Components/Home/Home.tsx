@@ -8,8 +8,8 @@ import Blurb from "./Home-Blurb";
  * Summarises me and the page */
 export const Home = () => {
     return (
-            <Box bgcolor="secondary.main" sx={{display: 'flex', flexWrap: "nowrap",}}>
-                <Grid container direction="row" justifyContent="flex-start" alignItems="center" margin={3}>
+            <Box bgcolor="secondary.main" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap",}}>
+                <Grid container xs={8} direction="row" justifyContent="flex-start" alignItems="center">
                     
                     {Splash}
                     {ActionItems}

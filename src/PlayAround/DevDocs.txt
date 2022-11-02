@@ -31,3 +31,17 @@ Dev Docs
             lists todo (please use)
         GitLens
             highlights git changes per line
+        
+    TODO
+        Theme
+            Decide on a Theme
+                Program Theme
+        Create common objects
+            Button Row
+            Slideshow
+        Embedding
+            Projects via itch.io
+            ?Embed CV 
+        Remake some of my Projects
+
+        

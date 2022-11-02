@@ -18,3 +18,11 @@ export interface Project {
 
     about: string;
 }
+
+export interface ActionInfo {
+    label: string;
+    icon: ReactNode | null;
+    link: string;
+    //colour
+    //button variant
+} 

@@ -48,9 +48,22 @@ Quick Reference
     https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module
     I need that file to use images as modules (import _ from _.jpg)
 
-Todo
+TODO
+  Theme
+      Decision
+        #b5cee4 rgb(181, 206, 228)
+        #436cae rgb(67, 108, 174)
+        #8a8b99 rgb(138, 139, 153)
+        #cec9ce rgb(206, 201, 206)
+        #181718 rgb(24, 23, 24)
+  Create common objects
+      Button Row
+      Slideshow
+  Embedding
+      Projects via itch.io
+      ?Embed CV 
+  Remake some of my Projects
   Navbar
-    Add CV
-  Home
-    Section 1
-      Add a collage of my work in the background
+    CV Button
+    Contact Button
+  Contact on Home

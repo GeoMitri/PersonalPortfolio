@@ -1,6 +1,6 @@
 const ACHIEVEMENTS: {key: string, desc: string}[] = [
     {
-        key: 'Officially Qualified', 
+        key: 'Officially Qualified',
         desc: 'Graduate with a Bachelor of Science in Games Development.',
     },
     {
@@ -12,7 +12,7 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
         desc: 'Ship and commercialise the puzzle game Stepping Stones on Android and iOS platforms in a solo team.'
     },
     {
-        key: 'Serious about Fun', 
+        key: 'Serious About Fun', 
         desc: 'Design and Develop 5 Serious Game projects.'
     },
     {
