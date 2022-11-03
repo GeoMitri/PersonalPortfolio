@@ -14,7 +14,6 @@ import * as PROJECTS_DATA from "./Data/ProjectsData";
 import * as TAGS_DATA from "./Data/ProjectTagsData";
 import Contact from "./Components/Contact/Contact";
 import { Project } from "./Objects/Interfaces";
-import FullpageTesting from "./PlayAround/FullpageTesting";
 
 const theme = createTheme({
   palette: {

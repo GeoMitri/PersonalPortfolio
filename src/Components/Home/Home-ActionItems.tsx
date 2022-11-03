@@ -8,18 +8,18 @@ const ActionItems =
     <>
         <Grid container xs={12}
         direction="row" justifyContent="space-evenly" alignItems="center"
-        sx={{backgroundColor:"tomato", flex:1}}>
+        sx={{backgroundColor:"tomato"}}>
             {/* <Typography>
             I make stuff!
             </Typography> */}
-            <Button href="/Projects" sx={{backgroundColor:"thistle"}}>
+            <Button size="large" href="/Projects" sx={{backgroundColor:"thistle"}}>
                 View Projects
             </Button>
 
             {/* <Typography>
             I have a CV!
             </Typography> */}
-            <Button sx={{backgroundColor:"thistle"}}>
+            <Button size="large" sx={{backgroundColor:"thistle"}}>
             Download CV
             </Button>
 

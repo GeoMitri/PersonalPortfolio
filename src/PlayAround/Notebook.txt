@@ -24,6 +24,12 @@ Quick Reference
       refer to the object's "direction" prop
       need "container" prop (not "item")
     Consider "columnGap" / "rowGap" props for content spacing
+    Positioning elements freely
+      container
+        sx={{position: 'relative'}}
+      element
+        sx={{position: 'absolute', width: ..., top: ..., ...}}
+
 
   href
     external links need "https:// ..."
