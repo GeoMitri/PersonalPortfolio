@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Album from './PlayAround/Album';
 import { BrowserRouter } from 'react-router-dom';
 //Fonts
 import '@fontsource/roboto/300.css';

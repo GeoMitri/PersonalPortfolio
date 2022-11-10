@@ -33,7 +33,7 @@ function ProjectCard(props:projectCardProps) {
                         {props.projectRef[1].tags.map((tag) => 
                             <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />
                             )}
-                        <Typography paddingTop={2} variant="body2" color="text.secondary">
+                        <Typography paddingTop={2} variant="body2" color="primary">
                             {props.projectRef[1].subtitle}
                         </Typography>
                     </CardContent>

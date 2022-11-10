@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Color, Grid } from '@mui/material';
 
 const pages = ['Home', 'Projects', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,8 +37,33 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
 
+  function colorPerPage(index: number){
+    switch(index) { 
+      case 0: { 
+        return("player1")
+        break; 
+      } 
+      case 1: { 
+        return("player2")
+         break; 
+      } 
+      case 2: { 
+        return("player3")
+        break; 
+      }
+      case 3: { 
+        return("player4")
+        break; 
+      }  
+      default: { 
+        return("player1")
+         break; 
+      } 
+   } 
+  }
+  
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{backgroundColor:"neutral.light"}}>
       <CssBaseline>
         <Container maxWidth="xl" sx={{height: 70}}>
           <Toolbar disableGutters>
@@ -51,27 +77,33 @@ const ResponsiveAppBar = () => {
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
                 fontWeight: 700,
                 letterSpacing: '.1rem',
-                color: 'inherit',
+                color: 'neutral.dark',
                 textDecoration: 'none',
               }}
-            >GEORGE MITRI
+            >George Mitri
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
+            <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              {pages.map((page, i) => (
                 <Button
-                  key={page}
+                key={page}
                   href={(page === "Home") ? "/" : "/"+page.toString()}
                   
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  color={colorPerPage(i)}
+                  variant="text"
                 >
-                  {page}
+                  <Typography fontWeight={"500"} letterSpacing={1.5}>
+                    {page}
+                  </Typography>
                 </Button>
               ))}
             </Box>
+
+            <Button color='player4' variant='outlined' sx={{ my: 2, display: 'block' }}>
+              Download CV
+            </Button>
 
             {/* Mobile */}
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

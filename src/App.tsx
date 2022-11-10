@@ -14,22 +14,18 @@ import * as PROJECTS_DATA from "./Data/ProjectsData";
 import * as TAGS_DATA from "./Data/ProjectTagsData";
 import Contact from "./Components/Contact/Contact";
 import { Project } from "./Objects/Interfaces";
+import snesTheme from "./Components/Generic/Theme";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#33ff11',
-      light: '#aff4c1',
-      dark: '#ff3f11',
-    },
-  },  
-});
-  
+
+
+
+
 function App() {
 
     const myProjects : [string, Project][] = Object.entries(PROJECTS_DATA);
 
     return (
+    <ThemeProvider theme={snesTheme}>      
     <div className="App">
       <ResponsiveAppBar/>
       <Routes>
@@ -43,6 +39,7 @@ function App() {
         {/* <Route path="/Testing" element={<ProjectTemplate {...PROJECTS_DATA.GridBlade}/>}/>  */}
       </Routes>
     </div>
+    </ThemeProvider>
     
   );
 }

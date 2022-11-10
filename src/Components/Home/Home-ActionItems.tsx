@@ -8,19 +8,23 @@ const ActionItems =
     <>
         <Grid container xs={12}
         direction="row" justifyContent="space-evenly" alignItems="center"
-        sx={{backgroundColor:"tomato"}}>
+        sx={{}}>
             {/* <Typography>
             I make stuff!
             </Typography> */}
-            <Button size="large" href="/Projects" sx={{backgroundColor:"thistle"}}>
-                View Projects
+            <Button size="large" href="/Projects" variant="contained" color="player2">
+                <Typography color={"neutral.light"}>
+                    View Projects
+                </Typography>
             </Button>
 
             {/* <Typography>
             I have a CV!
             </Typography> */}
-            <Button size="large" sx={{backgroundColor:"thistle"}}>
-            Download CV
+            <Button size="large" variant="contained" color="player4">
+                <Typography color={"neutral.light"}>
+                    Download CV
+                </Typography>
             </Button>
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Grid, } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 import * as DATA from "../../Data/ProjectsData";
 import * as TAGS from "../../Data/ProjectTagsData";
 import { Tag, Project } from "../../Objects/Interfaces";
@@ -32,15 +32,20 @@ export const Projects = () => {
     };
 
     return (
-        <Box bgcolor="secondary.main" sx={{display: 'flex', flexWrap: "nowrap",}}>
+
+        <Box bgcolor="neutral.light" sx={{display: 'flex', flexWrap: "nowrap"}}>
             <Grid container direction="row" justifyContent="flex-start" alignItems="left" margin={3}>
+
+                <Typography color={"neutral.dark"} variant="h1" fontWeight={"bold"} lineHeight={1.5} gutterBottom justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
+                    PROJECTS
+                </Typography>
                 
                 {/* fliter */}
                 <FilterSelect tagsCollection={myTags} currentTags={activeTags} onChangeFunction={onFilterChange}/>
 
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="center"
-                rowGap={4} columnGap={8} margin={3} sx={{ backgroundColor:"magenta" }}>
+                rowGap={4} columnGap={8} margin={3} sx={{}}>
 
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
                     
