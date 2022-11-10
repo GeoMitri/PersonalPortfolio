@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { Project } from "../../Objects/Interfaces";
 import { Card, CardActionArea, CardContent, CardMedia, Chip, Icon, Typography} from "@mui/material";
 
@@ -9,33 +9,50 @@ import { Card, CardActionArea, CardContent, CardMedia, Chip, Icon, Typography} f
  }
 function ProjectCard(props:projectCardProps) { 
     
-    const [color, setColor] = useState("Aquamarine");
+    const [color, setColor] = useState("player2.main");
+    const [subtitleNode, setSubtitleNode] = useState<ReactNode|null>();
+
+    function onHoverIn(){
+        setColor("player2.main")
+        setSubtitleNode(
+            props.projectRef[1].subtitle === "" ? null :
+                <Typography paddingTop={2} variant="body2" color="neutral.light">
+                {props.projectRef[1].subtitle}
+                </Typography> 
+        )
+    }
+
+    function onHoverOut(){
+        setColor("player2.main")
+        setSubtitleNode(null);
+    }
 
     return(
-        <Card key={props.projectRef[1].name} sx={{height: 400, width: 400, backgroundColor: "DarkSlateBlue"}}
-            onMouseOver={() => setColor("Turquoise")}
-            onMouseOut={() => setColor("Aquamarine")}
+        <Card key={props.projectRef[1].name} sx={{height: 400, width: 400, borderRadius: '5%', backgroundColor: "DarkSlateBlue"}}
+            onMouseOver={() => onHoverIn()}
+            onMouseOut={() => onHoverOut()}
         >
-                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: 400, width: 400,backgroundColor: "gold"}}>
+                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: 400, width: 400,backgroundColor: "neutral.main"}}>
                     <CardMedia
                         component="img"
                         image={props.projectRef[1].backgroundImage}
                         alt="test"
-                        sx={{position:"absolute", top: 0}}
+                        sx={{position:"absolute", top: 0, height:"80%"}}
                     />
 
                     <CardContent sx={{position: 'absolute', bottom: 0, width: '100%', backgroundColor: color}}>
-                        <Typography>
-                        </Typography>
-                        <Typography variant="h5" gutterBottom component="div">
+                        <Typography variant="h5" gutterBottom component="div" color={"neutral.light"}>
                             {props.projectRef[1].name}
                         </Typography>
                         {props.projectRef[1].tags.map((tag) => 
-                            <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} />
+                            <Chip key={tag.name} icon={<Icon style={{color:"player2.main"}}>{tag.icon}</Icon>} label={tag.name} 
+                            sx={{color:"player2.main", backgroundColor:"neutral.light", marginRight:0.5}} />
                             )}
-                        <Typography paddingTop={2} variant="body2" color="primary">
+
+                        {subtitleNode}
+                        {/* <Typography paddingTop={2} variant="body2" color="neutral.light">
                             {props.projectRef[1].subtitle}
-                        </Typography>
+                        </Typography> */}
                     </CardContent>
                 </CardActionArea>
         </Card>

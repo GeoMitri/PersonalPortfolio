@@ -38,6 +38,16 @@ declare module '@mui/material/ToggleButtonGroup' {
   }
 }
 
+declare module '@mui/material/Chip' {
+  interface ChipPropsColorOverrides {
+      player1: true;
+      player2: true;
+      player3: true;
+      player4: true;
+      neutral: true;
+  }
+}
+
 // declare module "@mui/material/styles" {
 //     interface Theme {
 //         gameCol: {

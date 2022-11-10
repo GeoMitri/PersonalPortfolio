@@ -10,13 +10,12 @@ import { useTheme } from "@mui/material/styles";
  * Used in Projects.tsx to filter displayed projects
  * Requires tags, modifies activeTags, calls onFilterChange
  */
-
- const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
+const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
     "&.Mui-selected, &.Mui-selected:hover": {
-      color: "white",
+      color: theme.palette.neutral.light,
       backgroundColor: theme.palette.player2.main
     }
-  }));
+}));
 
 interface FilterSelectProps {
     tagsCollection : Tag[], 
@@ -28,25 +27,29 @@ interface FilterSelectProps {
 
 function FilterSelect(props : FilterSelectProps) {
     
-    // const [visualedButton, setVisualedButton] = useState<Element | null>(document.querySelector('[aria-label="all"]'));
+    const [tagLabel, setTagLabel] = useState("all");
 
+    const handleChange = (
+        event: React.MouseEvent<HTMLElement>,
+        newTagsName: string,
+        ) => {
+        if (newTagsName !== null) {
+            setTagLabel(newTagsName);
+            props.onChangeFunction(TagByName(newTagsName));
+            
+        }
+        };
 
-
-    // const themeGet = useTheme();
-    
-    // function setColoured(label : string){
-    //     const col : string = themeGet.palette.player2.main; 
-    //     const defCol : string = ""; 
-        
-    //     visualedButton?.setAttribute('style', 'background:' + defCol + ';');
-        
-    //     setVisualedButton(document.querySelector('[aria-label="' + label + '"]'));
-        
-    //     visualedButton?.setAttribute('style', 'background:' + col + ';');
-        
-    //     //console.log(document.querySelector('[aria-label="' + label + '"]')?.setAttribute('style', 'background:' + defCol + ';'));
-    // }
-    
+    function TagByName(name : string){
+        var tags : Tag[] = [];
+        props.tagsCollection.map((tag) => {
+            if(tag.name === name){
+                tags = [tag];
+            }
+            return null;
+        })
+        return tags;
+    }
 
     return(<>
         {/* Debug selection */}
@@ -57,17 +60,17 @@ function FilterSelect(props : FilterSelectProps) {
 
         <Grid item xs={12}>
             <ToggleButtonGroup
-            value={props.currentTags}
-            onChange={props.onChangeFunction}
+            value={tagLabel}
+            onChange={handleChange}
             exclusive
             aria-label="tag-filters">
-                <ToggleButton value={props.tagsCollection} onChange={(e) => {console.log(e)}} aria-label="all">
+                <StyledToggleButton value={"all"} aria-label="all">
                     All
-                </ToggleButton>
+                </StyledToggleButton>
                 {props.tagsCollection.map((tag) =>
-                    <ToggleButton value={[tag]} aria-label={tag.name}>
+                    <StyledToggleButton value={tag.name} aria-label={tag.name}>
                         {tag.name}
-                    </ToggleButton>
+                    </StyledToggleButton>
                 )}
             </ToggleButtonGroup>
         </Grid>

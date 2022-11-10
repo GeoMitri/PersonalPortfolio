@@ -18,7 +18,6 @@ export const Projects = () => {
 
     // Change displayed projects using activeTags
     const onFilterChange = (
-      event: React.MouseEvent<HTMLElement>,
       newTags: Tag[] | null,
     ) => {
         if(newTags !== null){

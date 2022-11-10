@@ -32,7 +32,7 @@ function EmailForm() {
             setsubmitDisabled(false);            
             
             setFeedbackSeverity("error");
-            setfeedbackMessage("Email failed to send. " + error.text)
+            setfeedbackMessage("Email failed to send :( Please try again later." + error.text)
             setOpen(true);
 
         });
@@ -51,11 +51,13 @@ function EmailForm() {
 
     return(
     <>
-        <Box bgcolor="chocolate" component="form" ref={myForm} onSubmit={sendEmail}>
-            <TextField required label="Full Name" type="text" name="user_name" fullWidth />
-            <TextField required label="Email" type="email" name="user_email" fullWidth />
-            <TextField required label="Message" name="message" fullWidth multiline rows={5} />
-            <Button disabled={submitDisabled} type="submit" value="Send" endIcon={submitIcon}>Send</Button>
+        <Box component="form" ref={myForm} onSubmit={sendEmail}>
+            <TextField margin="normal" required label="Full Name" type="text" name="user_name" fullWidth />
+            <TextField margin="normal" required label="Email" type="email" name="user_email" fullWidth />
+            <TextField margin="normal" required label="Message" name="message" fullWidth multiline rows={5} />
+            <Box display="flex" justifyContent="flex-end">
+            <Button disabled={submitDisabled} type="submit" value="Send" endIcon={submitIcon} variant="contained" color="player3">Send</Button>
+            </Box>
         </Box>
 
         <Snackbar open={open} autoHideDuration={6000} onClose={handleCloseFeedback}>

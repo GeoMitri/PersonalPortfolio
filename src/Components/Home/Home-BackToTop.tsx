@@ -22,7 +22,7 @@ function BackToTopButton(props:BackToTopButtonProps) {
     return(
         <Button
         onClick={() => {Scroll.animateScroll.scrollToTop()}} 
-        sx={{backgroundColor:"tan", position:"fixed", bottom:20, right:visiblePos, width:160, height: 80}}>
+        sx={{backgroundColor:"neutral.light", position:"fixed", bottom:20, right:visiblePos, width:160, height: 80}}>
             <KeyboardDoubleArrowUpIcon/>
         </Button>
     )

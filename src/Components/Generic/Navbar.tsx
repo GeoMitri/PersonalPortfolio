@@ -84,7 +84,7 @@ const ResponsiveAppBar = () => {
               }}
             >George Mitri
             </Typography>
-            <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex' }, height:70}}>
               {pages.map((page, i) => (
                 <Button
                 key={page}
@@ -93,6 +93,7 @@ const ResponsiveAppBar = () => {
                   onClick={handleCloseNavMenu}
                   color={colorPerPage(i)}
                   variant="text"
+                  sx={{height:"100%"}}
                 >
                   <Typography fontWeight={"500"} letterSpacing={1.5}>
                     {page}

@@ -15,29 +15,29 @@ import { styled } from "@mui/material"
 export const Home = () => {
 
     return (
-        <Box bgcolor="secondary.main" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap",}}>
+        <Box bgcolor="player1.main" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap"}}>
 
-                <BackToTopButton showThreshold={600}/>
+                <BackToTopButton showThreshold={700}/>
 
                 <Grid container direction="row" justifyContent="center" alignItems="center">
 
-                    <Grid container xs={12} minHeight={600} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
+                    <Grid container xs={12} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={8} minHeight={600} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
+                        <Grid container xs={8} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
                             sx={{position: 'relative'}}>
                             {Splash}
                             {ActionItems}
-                            <NextSectionButton elementID="blurb" />
+                            <NextSectionButton elementID="blurb"/>
                         </Grid>
                     </Grid>
                     
-                    <Grid id="blurb" container xs={8} minHeight={600} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"blanchedalmond"}}>
+                    <Grid id="blurb" container xs={8} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"blanchedalmond"}}>
                         {Blurb}
-                        {/* <NextSectionButton elementID="achievements" /> */}
+                        <NextSectionButton elementID="achievements" />
                     </Grid>
 
-                    <Grid id="achievements" container xs={8} minHeight={600} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
+                    <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
                         <Grid container sx={{position: 'relative', backgroundColor:"steelblue"}}>
                             <Typography sx={{position: 'absolute'}} variant="h3"> 
                                 My Achievements
@@ -53,7 +53,7 @@ export const Home = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container xs={8} minHeight={600} height={useWindowDimensions().height-70}>
+                    <Grid container xs={8} minHeight={700} height={useWindowDimensions().height-70}>
                         <Button onClick={() => {Scroll.animateScroll.scrollToTop()}}>testasdfsa</Button>
                     </Grid>
 

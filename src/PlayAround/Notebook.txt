@@ -30,6 +30,10 @@ Quick Reference
       element
         sx={{position: 'absolute', width: ..., top: ..., ...}}
 
+  <ToggleButtonGroup>
+    Doesn't like custom data types for value prop
+      Causes no colour to light up
+      Work around by using string as an index and performing other instructions in the onChange{} function.
 
   href
     external links need "https:// ..."

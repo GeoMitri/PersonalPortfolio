@@ -10,7 +10,7 @@ function NextSectionButton(props:NextSectionButtonProps) {
     return(
         <Button 
         onClick={() => {Scroll.animateScroll.scrollTo(document.getElementById(props.elementID)!.offsetTop-70)}} 
-        sx={{backgroundColor:"tan", position: 'absolute', bottom: 20, width:160, height: 80}}>
+        sx={{backgroundColor:"neutral.light", position: 'absolute', bottom: 20, width:100, height: 80}}>
             <KeyboardDoubleArrowDownIcon/>
         </Button>
     )

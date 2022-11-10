@@ -7,25 +7,25 @@ const snesTheme = createTheme({
             main: '#c1121c',
             light: "#e85b63",
             //dark
-            //contrastText: '#fff',
+            contrastText: '#dbdbdb',
         },
         player2: {
             main: '#00387b',
             light: "#2896df",
             //dark
-            //contrastText: '#fff',
+            contrastText: '#dbdbdb',
         },
         player3: {
             main: '#007243',
             light: "#13bd77",
             //dark
-            //contrastText: '#fff',
+            contrastText: '#dbdbdb',
         },
         player4: {
             main: '#b89200',
             light: "#f0d46a",
             //dark
-            //contrastText: '#fff',
+            contrastText: '#dbdbdb',
         },
         neutral: {
           main: '#707372',

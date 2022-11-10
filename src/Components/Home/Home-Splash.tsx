@@ -26,7 +26,7 @@ const Splash =
             component="img"
             image="me_portrait.jpg"
             alt="George's Portrait"
-            sx={{maxWidth:400}}
+            sx={{maxWidth:400, borderRadius:'5%'}}
             />
         </Grid>
     </>;
