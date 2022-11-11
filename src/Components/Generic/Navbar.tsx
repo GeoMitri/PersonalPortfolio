@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
               ))}
             </Box>
 
-            <Button color='player4' variant='outlined' sx={{ my: 2, display: 'block' }}>
+            <Button color='player4' disableElevation variant='contained' sx={{ my: 2, display: 'block' }}>
               Download CV
             </Button>
 

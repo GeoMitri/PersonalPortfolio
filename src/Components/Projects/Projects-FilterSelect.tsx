@@ -35,8 +35,10 @@ function FilterSelect(props : FilterSelectProps) {
         ) => {
         if (newTagsName !== null) {
             setTagLabel(newTagsName);
-            props.onChangeFunction(TagByName(newTagsName));
-            
+            if(newTagsName === "all"){
+                props.onChangeFunction(props.tagsCollection);
+            }
+            else props.onChangeFunction(TagByName(newTagsName));
         }
         };
 

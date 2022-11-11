@@ -3,14 +3,16 @@ import { Tag } from "../Objects/Interfaces";
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import AppsIcon from '@mui/icons-material/Apps';
 
 export const Serious : Tag = {
     name: "Serious Game",
     icon: <PsychologyIcon/> 
 };
 
-export const Shipped : Tag = {
-    name: "Shipped",
+export const Commercial : Tag = {
+    name: "Commercial",
     icon: <StorefrontIcon/> 
 };
 
@@ -21,7 +23,12 @@ export const Playable : Tag = {
 
 export const NonGame : Tag = {
     name: "Non-Game",
-    icon: <SportsEsportsIcon/>
+    icon: <AppsIcon/>
+};
+
+export const ForFun : Tag = {
+    name: "For Fun",
+    icon: <SentimentVerySatisfiedIcon/>
 };
 
 // const PROJECT_TAGS = {

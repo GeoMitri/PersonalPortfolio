@@ -3,6 +3,7 @@ import { Box, Button, Grid, TextField, CircularProgress, Snackbar, Alert, AlertC
 import emailjs from '@emailjs/browser';
 import SendIcon from '@mui/icons-material/Send';
 import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 import EmailForm from './Contact-EmailForm';
 import { SocialIcon } from 'react-social-icons';
 
@@ -35,9 +36,9 @@ function Contact() {
                 <SocialIcon url="https://www.linkedin.com/in/george-mitri-10b65a118/" target="_blank" rel="noopener noreferrer"/>
                 <SocialIcon url="https://discordapp.com/users/260225926476988416/" target="_blank" rel="noopener noreferrer"/>
                 <SocialIcon url="https://twitter.com/SorzeeMitri" target="_blank" rel="noopener noreferrer"/>
+                <SocialIcon url="https://github.com/GeoMitri" target="_blank" rel="noopener noreferrer"/>
                 <SocialIcon url="https://www.instagram.com/georgemichaelmitri/" target="_blank" rel="noopener noreferrer"/>
                 <SocialIcon url="https://www.facebook.com/george.mitri.9" target="_blank" rel="noopener noreferrer"/>
-                <SocialIcon url="https://github.com/GeoMitri" target="_blank" rel="noopener noreferrer"/>
             </Grid>
 
             <Grid container xs={12} marginTop={2} justifyContent="center">
@@ -46,10 +47,10 @@ function Contact() {
 
             <Grid container marginTop={4} direction="row" xs={12} justifyContent="center">
                 <Typography color={"neutral.dark"} variant="body1" gutterBottom justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
-                    georgemmitri@gmail.com
+                    <EmailIcon sx={{marginRight:1}}/> georgemmitri@gmail.com
                 </Typography>
                 <Typography color={"neutral.dark"} variant="body1" gutterBottom justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
-                    Ph: (+61) 406 900 981
+                    <PhoneIcon sx={{marginRight:1}}/> (+61) 406 900 981
                 </Typography>
             </Grid>
 
