@@ -46,7 +46,7 @@ function ProjectCard(props:projectCardProps) {
                         </Typography>
                         {props.projectRef[1].tags.map((tag) => 
                             <Chip key={tag.name} icon={<Icon style={{color:"player2.main"}}>{tag.icon}</Icon>} label={tag.name} 
-                            sx={{color:"player2.main", backgroundColor:"neutral.light", marginRight:0.5}} />
+                            sx={{color:"neutral.main", backgroundColor:"neutral.light", marginRight:0.5}} />
                             )}
 
                         {subtitleNode}

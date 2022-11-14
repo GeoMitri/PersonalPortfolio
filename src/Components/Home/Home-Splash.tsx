@@ -16,7 +16,7 @@ const Splash =
             Engineer of Fun
             </Typography>
             <Typography variant="subtitle1" color={"neutral.dark"}> 
-            Game Developer | Game Designer
+            Game Designer | Unity Developer
             </Typography>
         </Grid>
 

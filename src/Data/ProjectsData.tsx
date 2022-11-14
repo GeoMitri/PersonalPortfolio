@@ -6,8 +6,8 @@ export const GridBlade : Project = {
     subtitle: "Learn linear algebra concepts through turn-based combat.",
     tags: [TAGS.Serious, TAGS.Playable],
     backgroundImage: "/images/other.jpg",
-    about: 
-        "The produced educational game, titled GridBlade, is a puzzle-adventure game that revolves around defeating monsters by intercepting them with lines. Upon beginning the first level the player encounters a friendly frog named Ribbit. Ribbit hands the player a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. Ribbit explains that the GridBlade requires commands to work, in the form of linear equations."
+    about: "Gridblade is a puzzle-adventure game where players fight monsters by intercepting them with lines. Upon beginning the first level the player encounters a friendly frog named Ribbit. Ribbit hands the player a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. Ribbit explains that the GridBlade requires commands to work, in the form of linear equations.",
+    carouselItems: []
 }
 
 export const SteppingStones : Project = {
@@ -15,7 +15,8 @@ export const SteppingStones : Project = {
     subtitle: "Solve colourful puzzles with Steppa the Rabbit.",
     tags: [TAGS.ForFun, TAGS.Commercial, TAGS.Playable],
     backgroundImage: "/images/Projects/SteppingStones/JustSteppa.jpg",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const SmartStep : Project = {
@@ -23,7 +24,8 @@ export const SmartStep : Project = {
     subtitle: "A collection of exergames training balance and fall prevention.",
     tags: [TAGS.Serious, TAGS.Commercial],
     backgroundImage: "/images/other.jpg",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const ChoiceStepper : Project = {
@@ -31,7 +33,8 @@ export const ChoiceStepper : Project = {
     subtitle: "A research tool assessing reaction time in varied stimuli conditions.",
     tags: [TAGS.Serious],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const SallysApples : Project = {
@@ -39,7 +42,8 @@ export const SallysApples : Project = {
     subtitle: "Retrieve Stacy's lost apples in VR while training hazard perception.",
     tags: [TAGS.Serious],
     backgroundImage: "/other.jpg",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const LastIsland : Project = {
@@ -47,7 +51,8 @@ export const LastIsland : Project = {
     subtitle: "Save the planet from destruction using real sustainability models.",
     tags: [TAGS.Serious],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const DescendantOfSoul : Project = {
@@ -55,7 +60,8 @@ export const DescendantOfSoul : Project = {
     subtitle: "Unleash an arsenal of elemental spells in a combat-focused adventure.",
     tags: [TAGS.ForFun],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const GetMeOut : Project = {
@@ -63,7 +69,8 @@ export const GetMeOut : Project = {
     subtitle: "Escape gauntlets by apparating your own platforms.",
     tags: [TAGS.ForFun],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const SpaceWars : Project = {
@@ -71,7 +78,8 @@ export const SpaceWars : Project = {
     subtitle: "Blast your friends by firing projectiles in space.",
     tags: [TAGS.ForFun],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const WatchDesignerPro : Project = {
@@ -79,7 +87,8 @@ export const WatchDesignerPro : Project = {
     subtitle: "A Unity-based mobile app for customising personal watches.",
     tags: [TAGS.NonGame],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const MusicCollection : Project = {
@@ -87,7 +96,8 @@ export const MusicCollection : Project = {
     subtitle: "Listen in to some of my songs and jingles!",
     tags: [TAGS.NonGame],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 export const PachinkoTutorial : Project = {
@@ -95,7 +105,8 @@ export const PachinkoTutorial : Project = {
     subtitle: "Create your own Pachinko game in this short course for Unity.",
     tags: [TAGS.NonGame],
     backgroundImage: "",
-    about: ""
+    about: "",
+    carouselItems: []
 }
 
 

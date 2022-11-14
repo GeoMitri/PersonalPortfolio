@@ -1,33 +1,39 @@
-import { Typography } from "@mui/material";
+import { List, ListItem, Typography } from "@mui/material";
 import { Grid } from '@mui/material';
 
 /**Section of text exploring my deets further*/
 const Blurb = 
     <>
-        <Grid item xs={12} sx={{backgroundColor:"turquoise"}}>
-
-            <Typography variant="h3"> 
-            I make games that do good.
+        <Grid container direction="column" xs={12}>
+            <Typography variant="h3" color={"player1.main"}> 
+                Missions
             </Typography>
-            <Typography variant="h5"> 
-            Or at least, that's my mission.
-            </Typography>
-            <Typography variant="body1"> 
-            I make games that do good in this world.
-            </Typography>
-            <Typography variant="h3">
-            Why games?
-            </Typography>
-            <Typography variant="h4"> 
-            1. Games are fun
-            </Typography>
-            <Typography variant="h4"> 
-            2. Games are good teachers
-            </Typography>
-            <Typography variant="h4"> 
-            3. Games are social
-            </Typography>
+            <List>
+                <ListItem>
+                    <Typography variant="h4"> 
+                        Create fun experiences.
+                    </Typography>  
+                </ListItem>
+                <ListItem>
+                    <Typography variant="h4"> 
+                        Harness fun beyond entertainment.
+                    </Typography>  
+                </ListItem>
+                <ListItem>
+                </ListItem>
+            </List>
             
+            <Typography variant="h3" color={"player1.main"}> 
+                About Me
+            </Typography>
+
+            <Typography variant="body1" color={"neutral.dark"}> 
+                As a young child, before I was making Since a young child, I have been driven to create eye-opening experiences in fun and meaningful ways. My passion lies within the good that can come from video games for players and involved communities, whether it be for entertainment, education, or other areas.
+            </Typography>            
+
+            <Typography variant="h3" color={"player1.main"}> 
+                Achievements
+            </Typography>
         </Grid>
     </>;
 

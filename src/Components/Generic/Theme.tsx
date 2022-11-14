@@ -22,7 +22,7 @@ const snesTheme = createTheme({
             contrastText: '#dbdbdb',
         },
         player4: {
-            main: '#bc8a39',
+            main: '#d5ae2d',
             light: "#f0d46a",
             //dark
             contrastText: '#dbdbdb',

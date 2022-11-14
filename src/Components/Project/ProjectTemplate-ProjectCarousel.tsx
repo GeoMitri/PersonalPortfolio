@@ -1,7 +1,9 @@
 import Carousel from 'react-material-ui-carousel';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import { Button, Paper } from '@mui/material';
+import { Box, Button, Paper } from '@mui/material';
+import { positions } from '@mui/system';
+import YoutubeExample from '../../PlayAround/YoutubeTesting';
 
 interface ProjectCarouselProps {
 
@@ -26,11 +28,19 @@ function ProjectCarousel(props : ProjectCarouselProps) {
     PrevIcon={<NavigateBeforeIcon/>}
     animation={"slide"}
     autoPlay={false}
-    navButtonsAlwaysVisible
+    //navButtonsAlwaysVisible
+    height={430}
+    indicatorContainerProps={{style:{marginTop:-20}}}
     //indicators={false}
-    sx={{width:500, height:400, backgroundColor:"red"}}
+    navButtonsWrapperProps={{style:{height:100, top:145}}}
+    sx={{width:640, margin:3}}
     >
-        {items.map( (item, i) => <Item key={i} item={item} /> )}
+        <YoutubeExample/>
+        <YoutubeExample/>
+        <Box sx={{width:640, height:390}}>
+            test
+        </Box>
+        {/* {items.map( (item, i) => <Item key={i} item={item} /> )} */}
     </Carousel>
     )
 }
@@ -41,13 +51,13 @@ export default ProjectCarousel
 function Item(props : any)
 {
     return (
-        <Paper sx={{flex:1}}>
+        <Box sx={{width:640, height:390}}>
             <h2>{props.item.name}</h2>
             <p>{props.item.description}</p>
 
             <Button className="CheckButton">
                 Check it out!
             </Button>
-        </Paper>
+        </Box>
     )
 }

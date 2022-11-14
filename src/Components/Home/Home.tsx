@@ -15,7 +15,7 @@ import { styled } from "@mui/material"
 export const Home = () => {
 
     return (
-        <Box bgcolor="player1.main" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap"}}>
+        <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap"}}>
 
                 <BackToTopButton showThreshold={700}/>
 
@@ -32,10 +32,16 @@ export const Home = () => {
                         </Grid>
                     </Grid>
                     
-                    <Grid id="blurb" container xs={8} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"blanchedalmond"}}>
-                        {Blurb}
-                        <NextSectionButton elementID="achievements" />
+                    <Grid container id="blurb" xs={12} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
+                        sx={{position: 'relative', backgroundColor:"neutral.light"}}>
+
+                        <Grid container xs={8} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                            {Blurb}
+                            <NextSectionButton elementID="achievements" />
+                        </Grid>
+
                     </Grid>
+
 
                     <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
                         <Grid container sx={{position: 'relative', backgroundColor:"steelblue"}}>
@@ -52,11 +58,6 @@ export const Home = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-
-                    <Grid container xs={8} minHeight={700} height={useWindowDimensions().height-70}>
-                        <Button onClick={() => {Scroll.animateScroll.scrollToTop()}}>testasdfsa</Button>
-                    </Grid>
-
                 </Grid>
             </Box>
     );

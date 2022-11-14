@@ -15,14 +15,6 @@ export interface Project {
     subtitle: string;
     tags: Tag[];
     backgroundImage: string;
-
     about: string;
+    carouselItems?: ReactNode[]
 }
-
-export interface ActionInfo {
-    label: string;
-    icon: ReactNode | null;
-    link: string;
-    //colour
-    //button variant
-} 
