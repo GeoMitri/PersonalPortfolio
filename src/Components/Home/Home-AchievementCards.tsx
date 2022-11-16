@@ -9,17 +9,17 @@ import StarIcon from '@mui/icons-material/Star';
  * Placed into grid in Home.tsx  
  */
 const achievementCards = ACHIEVEMENTS.map((achievement) =>
-    <Card sx={{height: 135, width: 400}}>
+    <Card sx={{height: 135, width: 400, border:5, borderRadius:5, backgroundColor:"neutral.light", borderColor:"neutral.main"}}>
             <CardHeader
-                avatar={<StarIcon/>}
+                avatar={<StarIcon sx={{color:"player1.main"}}/>}
                 title= {
-                    <Typography variant="h5">
+                    <Typography variant="h5" color="neutral.dark">
                         {achievement.key}
                     </Typography>                
                 }
                 />
-            <CardContent>
-                <Typography gutterBottom variant="body2" color="text.secondary">
+            <CardContent sx={{marginTop:-2.5}}>
+                <Typography gutterBottom variant="body2" color="neutral.main">
                     {achievement.desc}
                 </Typography>
             </CardContent>

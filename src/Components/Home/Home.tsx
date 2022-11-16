@@ -32,18 +32,17 @@ export const Home = () => {
                         </Grid>
                     </Grid>
                     
-                    <Grid container id="blurb" xs={12} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 
+                    <Grid container id="blurb" xs={12} justifyContent="center" alignItems="flex-start" minHeight={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={8} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                        <Grid container xs={8} justifyContent="center" alignItems="flex-start" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
                             {Blurb}
-                            <NextSectionButton elementID="achievements" />
+                            {/* <NextSectionButton elementID="achievements" /> */}
                         </Grid>
 
                     </Grid>
 
-
-                    <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
+                    {/* <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
                         <Grid container sx={{position: 'relative', backgroundColor:"steelblue"}}>
                             <Typography sx={{position: 'absolute'}} variant="h3"> 
                                 My Achievements
@@ -57,7 +56,8 @@ export const Home = () => {
                                 {achievementCards}
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
+                    
                 </Grid>
             </Box>
     );

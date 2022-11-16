@@ -1,4 +1,6 @@
 import { Grid, Button, Typography } from "@mui/material";
+import * as Scroll from "react-scroll";
+
 
 /**Section of quick in-line interactables: 
  *  Projects
@@ -21,9 +23,11 @@ const ActionItems =
             {/* <Typography>
             I have a CV!
             </Typography> */}
-            <Button size="large" variant="contained" color="player4">
-                <Typography color={"neutral.light"}>
-                    Download CV
+            <Button size="large" 
+            onClick={() => {Scroll.animateScroll.scrollTo(document.getElementById("blurb")!.offsetTop-70)}}
+            variant="outlined" color="player1">
+                <Typography color={"player1.main"}>
+                    Learn More
                 </Typography>
             </Button>
 

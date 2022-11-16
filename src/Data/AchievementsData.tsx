@@ -9,7 +9,7 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
     },
     {
         key: 'Sole Developer', 
-        desc: 'Ship and commercialise the puzzle game Stepping Stones on Android and iOS platforms in a solo team.'
+        desc: 'Release the puzzle game Stepping Stones on Android and iOS platforms in a solo team.'
     },
     {
         key: 'Serious About Fun', 
@@ -22,7 +22,7 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
     {
         key: 'Learning Complete', 
         desc: 'Understand everything there is to know about game design and development'
-    },
+    }
 ];
 
 export default ACHIEVEMENTS;

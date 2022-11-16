@@ -6,8 +6,9 @@ export const GridBlade : Project = {
     subtitle: "Learn linear algebra concepts through turn-based combat.",
     tags: [TAGS.Serious, TAGS.Playable],
     backgroundImage: "/images/other.jpg",
-    about: "Gridblade is a puzzle-adventure game where players fight monsters by intercepting them with lines. Upon beginning the first level the player encounters a friendly frog named Ribbit. Ribbit hands the player a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. Ribbit explains that the GridBlade requires commands to work, in the form of linear equations.",
-    carouselItems: []
+    about: "Gridblade is a puzzle-adventure game where players use linear algebra to slash enemies.fight monsters by intercepting them with lines. Upon beginning the first level the player encounters a friendly frog named Ribbit. Ribbit hands the player a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. Ribbit explains that the GridBlade requires commands to work, in the form of linear equations.",
+    carouselItems: [],
+    experience: []
 }
 
 export const SteppingStones : Project = {
@@ -15,8 +16,9 @@ export const SteppingStones : Project = {
     subtitle: "Solve colourful puzzles with Steppa the Rabbit.",
     tags: [TAGS.ForFun, TAGS.Commercial, TAGS.Playable],
     backgroundImage: "/images/Projects/SteppingStones/JustSteppa.jpg",
-    about: "",
-    carouselItems: []
+    about: "Stepping Stones is my first commercialised solo project. Solve . Difficulty / Timer. Replayability. Monetising.",
+    carouselItems: [],
+    experience: []
 }
 
 export const SmartStep : Project = {
@@ -24,8 +26,9 @@ export const SmartStep : Project = {
     subtitle: "A collection of exergames training balance and fall prevention.",
     tags: [TAGS.Serious, TAGS.Commercial],
     backgroundImage: "/images/other.jpg",
-    about: "",
-    carouselItems: []
+    about: "Rehabilitate. Falls & balance. Client Allity. Solo devloper. Software engineer. Revamping code.",
+    carouselItems: [],
+    experience: []
 }
 
 export const ChoiceStepper : Project = {
@@ -34,7 +37,8 @@ export const ChoiceStepper : Project = {
     tags: [TAGS.Serious],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const SallysApples : Project = {
@@ -43,7 +47,8 @@ export const SallysApples : Project = {
     tags: [TAGS.Serious],
     backgroundImage: "/other.jpg",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const LastIsland : Project = {
@@ -52,7 +57,8 @@ export const LastIsland : Project = {
     tags: [TAGS.Serious],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const DescendantOfSoul : Project = {
@@ -61,7 +67,8 @@ export const DescendantOfSoul : Project = {
     tags: [TAGS.ForFun],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const GetMeOut : Project = {
@@ -70,7 +77,8 @@ export const GetMeOut : Project = {
     tags: [TAGS.ForFun],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const SpaceWars : Project = {
@@ -79,7 +87,8 @@ export const SpaceWars : Project = {
     tags: [TAGS.ForFun],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const WatchDesignerPro : Project = {
@@ -88,7 +97,8 @@ export const WatchDesignerPro : Project = {
     tags: [TAGS.NonGame],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const MusicCollection : Project = {
@@ -97,7 +107,8 @@ export const MusicCollection : Project = {
     tags: [TAGS.NonGame],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 export const PachinkoTutorial : Project = {
@@ -106,7 +117,8 @@ export const PachinkoTutorial : Project = {
     tags: [TAGS.NonGame],
     backgroundImage: "",
     about: "",
-    carouselItems: []
+    carouselItems: [],
+    experience: []
 }
 
 

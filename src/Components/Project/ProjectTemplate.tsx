@@ -50,7 +50,7 @@ function ProjectTemplate(project :Project) {
                     links go here
                 </Grid>
 
-                <Grid container direction="row" paddingX={8} sx={{backgroundColor:"steelblue"}}>
+                <Grid container direction="row" paddingX={8}>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
@@ -78,7 +78,7 @@ function ProjectTemplate(project :Project) {
                 <Grid container xs={6} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
                     <List>
-                        <ListSubheader sx={{backgroundColor:"player2.main", color:"neutral.light", borderRadius:6}}>
+                    <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
                             <Typography align="center" variant="h6"> 
                                 Experience Gained
                             </Typography>
@@ -88,22 +88,22 @@ function ProjectTemplate(project :Project) {
                     </List>
                 </Grid>
 
-                <Grid container xs={6} sx={{backgroundColor:"player2.light"}}
+                <Grid container xs={6} 
                 display="flex" direction="row" justifyContent="center" alignItems="center">
                     <List sx={{ listStyleType: 'disc' }}>
-                        <ListSubheader sx={{backgroundColor:"player2.main", color:"neutral.light", borderRadius:6}}>
+                        <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
                             <Typography align="center" variant="h6"> 
                                 Personal Rank
                             </Typography>
                         </ListSubheader>
-                        <ListItem >Double check your spelling</ListItem>
+                        <ListItem >A-</ListItem>
                         <ListItem>Your search may have been removed or is not yet in the system</ListItem>
                     </List>
                 </Grid>
             
-                <Grid container xs={6} sx={{backgroundColor:"player2.light"}} direction="column" justifyContent="center" alignItems="center">
+                <Grid container xs={6} direction="column" justifyContent="center" alignItems="center">
                     <List sx={{ listStyleType: 'disc' }}>
-                        <ListSubheader sx={{backgroundColor:"player2.main", color:"neutral.light", borderRadius:6}}>
+                    <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
                             <Typography align="center" variant="h6"> 
                                 F.A.Q
                             </Typography>
@@ -115,7 +115,7 @@ function ProjectTemplate(project :Project) {
 
                 <Grid container xs={6} sx={{backgroundColor:"neutral.light"}} direction="column" justifyContent="center" alignItems="center">
                     <List sx={{ listStyleType: 'disc' }}>
-                        <ListSubheader sx={{backgroundColor:"player2.main", color:"neutral.light", borderRadius:6}}>
+                        <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
                             <Typography align="center" variant="h6"> 
                                 Roles
                             </Typography>
@@ -125,7 +125,7 @@ function ProjectTemplate(project :Project) {
                 </Grid>
                 </Grid>
 
-                <Grid container xs={12} sx={{backgroundColor:"gold"}} direction="row" justifyContent="center" alignItems="center">
+                <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                 <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
 
                     <Button size="large" href="/Projects" variant="contained" color="player2">

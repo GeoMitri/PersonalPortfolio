@@ -16,5 +16,11 @@ export interface Project {
     tags: Tag[];
     backgroundImage: string;
     about: string;
+    experience: ProjectXP[]
     carouselItems?: ReactNode[]
+}
+
+interface ProjectXP {
+    name: string;
+    xpLevel: 1 | 2 | 3;
 }

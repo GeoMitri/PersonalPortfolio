@@ -49,8 +49,8 @@ function EmailForm() {
         setOpen(false);
     };
 
-    return(
-    <>
+    return(<>
+
         <Box component="form" ref={myForm} onSubmit={sendEmail}>
             <TextField margin="normal" required label="Full Name" type="text" name="user_name" fullWidth />
             <TextField margin="normal" required label="Email" type="email" name="user_email" fullWidth />
@@ -64,9 +64,9 @@ function EmailForm() {
             <Alert severity={feedbackSeverity} sx={{ width: '100%' }}>
                 {feedbackMessage}
             </Alert>
-        </Snackbar>       
-    </>
-    )
+        </Snackbar>
+
+    </>)
 }
 
 export default EmailForm;
