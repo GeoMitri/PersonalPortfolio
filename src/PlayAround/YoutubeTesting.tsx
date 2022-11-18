@@ -1,6 +1,10 @@
 import YouTube, { YouTubeProps } from 'react-youtube';
 
-function YoutubeExample() {
+
+interface YoutubeItemProps{
+  videoID : string,
+}
+function YoutubeItem(props : YoutubeItemProps) {
     const onPlayerReady: YouTubeProps['onReady'] = (event) => {
       // access to player in all event handlers via event.target
       event.target.pauseVideo();
@@ -16,8 +20,8 @@ function YoutubeExample() {
     };
   
     return (
-        <YouTube videoId="-C-2AqRD8io" opts={opts} onReady={onPlayerReady} />
+        <YouTube videoId={props.videoID} opts={opts} onReady={onPlayerReady} />
     )
   }
 
-  export default YoutubeExample;
+  export default YoutubeItem;

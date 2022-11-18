@@ -3,10 +3,11 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Box, Button, Paper } from '@mui/material';
 import { positions } from '@mui/system';
-import YoutubeExample from '../../PlayAround/YoutubeTesting';
+import YoutubeItem from '../../PlayAround/YoutubeTesting';
+import { ReactNode } from "react";
 
 interface ProjectCarouselProps {
-
+    items : ReactNode[] | null;
 }
 
 function ProjectCarousel(props : ProjectCarouselProps) {
@@ -28,19 +29,20 @@ function ProjectCarousel(props : ProjectCarouselProps) {
     PrevIcon={<NavigateBeforeIcon/>}
     animation={"slide"}
     autoPlay={false}
-    //navButtonsAlwaysVisible
+    navButtonsAlwaysVisible
     height={430}
     indicatorContainerProps={{style:{marginTop:-20}}}
     //indicators={false}
     navButtonsWrapperProps={{style:{height:100, top:145}}}
     sx={{width:640, margin:3}}
     >
-        <YoutubeExample/>
-        <YoutubeExample/>
+
+        {props.items}
+        <YoutubeItem videoID="-C-2AqRD8io"/>
+        <YoutubeItem videoID="-C-2AqRD8io"/>
         <Box sx={{width:640, height:390}}>
             test
         </Box>
-        {/* {items.map( (item, i) => <Item key={i} item={item} /> )} */}
     </Carousel>
     )
 }

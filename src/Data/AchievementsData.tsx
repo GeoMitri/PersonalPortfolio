@@ -19,10 +19,10 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
         key: 'Unified', 
         desc: 'Develop games and interactive software using Unity3D for 8+ years.'
     },
-    {
-        key: 'Learning Complete', 
-        desc: 'Understand everything there is to know about game design and development'
-    }
+    // {
+    //     key: 'Learning Complete', 
+    //     desc: 'Understand everything there is to know about game design and development'
+    // }
 ];
 
 export default ACHIEVEMENTS;

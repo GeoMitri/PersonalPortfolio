@@ -1,8 +1,10 @@
-import { Box, Card, Button, CardMedia, Chip, Grid, Icon, List, ListItem, ListSubheader, Typography } from "@mui/material";
+import { Box, Card, Button, CardMedia, Chip, Grid, Icon, List, ListItem, ListSubheader, Typography, ListItemText, ListItemIcon, Tooltip } from "@mui/material";
 import { Project } from "../../Objects/Interfaces";
 import ProjectCarousel from "./ProjectTemplate-ProjectCarousel"; 
-import YoutubeExample from "../../PlayAround/YoutubeTesting"
+import YoutubeItem from "../../PlayAround/YoutubeTesting"
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import HelpIcon from '@mui/icons-material/Help';
+import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
 
 
 /** Templaye used to construct pages for Project Instances*/
@@ -46,15 +48,11 @@ function ProjectTemplate(project :Project) {
 
                 </Grid>
 
-                <Grid container xs={12} sx={{backgroundColor:"gold"}} direction="column" justifyContent="center" alignItems="center">
-                    links go here
-                </Grid>
-
                 <Grid container direction="row" paddingX={8}>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <ProjectCarousel/>
+                    <ProjectCarousel items={project.carouselItems!}/>
                 </Grid>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
@@ -66,7 +64,9 @@ function ProjectTemplate(project :Project) {
                     </Grid>
                 </Grid>
 
-
+                <Grid container xs={12} sx={{backgroundColor:"gold"}} direction="column" justifyContent="center" alignItems="center">
+                    links go here
+                </Grid>
                 
                 {/* <Grid container xs={6} sx={{backgroundColor:"neutral.main"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
@@ -75,20 +75,35 @@ function ProjectTemplate(project :Project) {
                     </Typography>
                 </Grid> */}
 
-                <Grid container xs={6} sx={{backgroundColor:"neutral.light"}}
+                <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
                     <List>
                     <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
-                            <Typography align="center" variant="h6"> 
-                                Experience Gained
-                            </Typography>
+                            <Tooltip title="Experience Gained: A list of skills and the extent to which they were developed from this project." placement="top" arrow>
+                                <Typography align="center" variant="h6">
+                                    Experience Gained
+                                    <HelpIcon fontSize="small" sx={{marginLeft:0.5, top:5}}/>
+                                </Typography>
+                            </Tooltip>
                         </ListSubheader>
-                        <ListItem >+10xp </ListItem>
-                        <ListItem>Liberated to work with no restrictions</ListItem>
+                        {project.experience.map((xp) => 
+                            <ListItem sx={{height:45, marginY:2}}>
+                                <ListItemIcon>
+                                    <List>
+                                        {[...Array(xp[1])].map( (_,i) => 
+                                            <KeyboardArrowUpSharpIcon fontSize="large" color="primary" sx={{marginY:-2.8, display:'flex', justifyContent:'flex-end'}}/>
+                                            )}
+                                    </List>
+                                </ListItemIcon>
+                                <ListItemText primary={xp[0]} sx={{marginY:-2.4, display:'flex'}}/>
+                            </ListItem>
+                            )}
+                        <ListItem ></ListItem>
+                        <ListItem></ListItem>
                     </List>
                 </Grid>
 
-                <Grid container xs={6} 
+                {/* <Grid container xs={6} 
                 display="flex" direction="row" justifyContent="center" alignItems="center">
                     <List sx={{ listStyleType: 'disc' }}>
                         <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
@@ -99,9 +114,9 @@ function ProjectTemplate(project :Project) {
                         <ListItem >A-</ListItem>
                         <ListItem>Your search may have been removed or is not yet in the system</ListItem>
                     </List>
-                </Grid>
+                </Grid> */}
             
-                <Grid container xs={6} direction="column" justifyContent="center" alignItems="center">
+                {/* <Grid container xs={6} direction="column" justifyContent="center" alignItems="center">
                     <List sx={{ listStyleType: 'disc' }}>
                     <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
                             <Typography align="center" variant="h6"> 
@@ -122,7 +137,8 @@ function ProjectTemplate(project :Project) {
                         </ListSubheader>
                         <ListItem sx={{ display: 'list-item' }}>Sound Engineer</ListItem>
                     </List>
-                </Grid>
+                </Grid> */}
+
                 </Grid>
 
                 <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
