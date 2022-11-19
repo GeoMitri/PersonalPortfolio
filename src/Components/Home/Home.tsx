@@ -1,14 +1,16 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import Splash from "./Home-Splash";
 import ActionItems from "./Home-ActionItems";
 import achievementCards from "./Home-AchievementCards";
-import Blurb from "./Home-Blurb";
+import Missions from "./Home-Missions";
 import useWindowDimensions from "../../Objects/windowDimensions";
 
 import * as Scroll from "react-scroll";
 import NextSectionButton from "./Home-NextSection";
 import BackToTopButton from "./Home-BackToTop";
 import { styled } from "@mui/material"
+import Achievements from "./Home-Achievements";
+import About from "./Home-About";
 
 /**Landing page
  * Summarises me and the page */
@@ -28,19 +30,70 @@ export const Home = () => {
                             sx={{position: 'relative'}}>
                             {Splash}
                             {ActionItems}
-                            <NextSectionButton elementID="blurb"/>
+                            <NextSectionButton elementID="missions"/>
                         </Grid>
+                    </Grid>
+
+                    <Grid container xs={12} justifyContent="center">
+                        <Divider variant="fullWidth" style={{width:'100%'}} ></Divider>
                     </Grid>
                     
-                    <Grid container id="blurb" xs={12} justifyContent="center" alignItems="flex-start" minHeight={useWindowDimensions().height-70} 
+                    <Grid container id="missions" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={8} justifyContent="center" alignItems="flex-start" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
-                            {Blurb}
-                            {/* <NextSectionButton elementID="achievements" /> */}
+                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                            {Missions}
+                            <NextSectionButton elementID="about" />
                         </Grid>
+                    </Grid>
+
+                    <Grid container xs={12} justifyContent="center">
+                        <Divider variant="fullWidth" style={{width:'100%'}} ></Divider>
+                    </Grid>
+
+                    <Grid container id="about" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
+                        sx={{position: 'relative', backgroundColor:"neutral.light"}}>
+
+                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                            {About}
+                            <NextSectionButton elementID="achievements" />
+                        </Grid>
+                    </Grid>
+
+                    <Grid container xs={12} justifyContent="center">
+                        <Divider variant="fullWidth" style={{width:'100%'}} ></Divider>
+                    </Grid>
+
+                    <Grid container id="achievements" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
+                        sx={{position: 'relative', backgroundColor:"neutral.light"}}>
+
+                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                            {Achievements}
+                        </Grid>
+                    </Grid>
+
+                    <Grid container direction="column" xs={12}>
+
+                    <Box marginTop={-10}>
+                    <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
+                        <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
+                            <Button size="large" href="/Projects" variant="contained" color="player2">
+                                <Typography color={"neutral.light"}>
+                                    Projects
+                                </Typography>
+                            </Button>
+
+                            <Button size="large" variant="outlined" color="player3">
+                                <Typography color={"player3.main"}>
+                                    Contact
+                                </Typography>
+                            </Button>
+                        </Grid>
+                        </Grid>
+                    </Box>
 
                     </Grid>
+                    
 
                     {/* <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
                         <Grid container sx={{position: 'relative', backgroundColor:"steelblue"}}>

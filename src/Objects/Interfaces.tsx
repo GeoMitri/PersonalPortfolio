@@ -19,7 +19,7 @@ export interface Project {
     experience: [string, 1 | 2 | 3 ][];
     // rank: string;
     // evaluations: string[];
-    carouselItems?: ReactNode[]
+    carouselItems: ReactNode[]
 }
 
 // interface ProjectXP {

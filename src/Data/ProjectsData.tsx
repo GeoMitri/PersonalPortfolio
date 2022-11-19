@@ -1,6 +1,7 @@
 import * as TAGS from "./ProjectTagsData";
 import {Project} from "../Objects/Interfaces";
 import YoutubeItem from "../PlayAround/YoutubeTesting";
+import Carousel from "react-material-ui-carousel";
 
 export const GridBlade : Project = {
     name: "GridBlade",
@@ -98,7 +99,7 @@ export const SallysApples : Project = {
         ["Strategies in managing feature creep", 2],
         ["Task scale and  estimation", 2],
         ["Mentoring developer interns", 2],
-        ["lua programming", 1],
+        ["Lua programming", 1],
         ["Humanoid animation", 1],
     ]
 }
@@ -165,7 +166,9 @@ export const SpaceWars : Project = {
     backgroundImage: "",
     about: "",
     carouselItems: [
-        <YoutubeItem videoID="tsTM33re0f4"/>
+        <YoutubeItem videoID="tsTM33re0f4"/>,
+        <YoutubeItem videoID="tsTM33re0f4"/>,
+        //<img src="/images/SpaceWars/4player.png" alt="broken"/>
     ],
     experience: [
         ["Effective playtesting", 3],

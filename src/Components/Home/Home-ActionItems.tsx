@@ -24,7 +24,7 @@ const ActionItems =
             I have a CV!
             </Typography> */}
             <Button size="large" 
-            onClick={() => {Scroll.animateScroll.scrollTo(document.getElementById("blurb")!.offsetTop-70)}}
+            onClick={() => {Scroll.animateScroll.scrollTo(document.getElementById("missions")!.offsetTop-70)}}
             variant="outlined" color="player1">
                 <Typography color={"player1.main"}>
                     Learn More
