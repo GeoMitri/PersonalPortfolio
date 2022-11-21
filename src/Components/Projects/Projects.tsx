@@ -44,11 +44,8 @@ export const Projects = () => {
 
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="center"
-                rowGap={5} columnGap={5} margin={3} sx={{}}>
-
-
+                rowGap={14} columnGap={14} margin={3} sx={{}}>
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
-                    
                 </Grid>
 
             </Grid>

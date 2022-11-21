@@ -144,9 +144,9 @@ function ProjectTemplate(project :Project) {
                 <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                 <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
 
-                    <Button size="large" href="/Projects" variant="contained" color="player2">
-                        <Typography color={"neutral.light"}>
-                            Projects
+                    <Button size="large" href="/Projects" variant="outlined" color="player2">
+                        <Typography color={"player2.main"}>
+                            More Projects
                         </Typography>
                     </Button>
 
