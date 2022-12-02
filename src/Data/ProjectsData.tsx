@@ -1,6 +1,6 @@
 import * as TAGS from "./ProjectTagsData";
 import {Project} from "../Objects/Interfaces";
-import YoutubeItem from "../PlayAround/YoutubeTesting";
+import YoutubeItem from "../Components/Project/ProjectTemplate-YoutubeItem";
 import Carousel from "react-material-ui-carousel";
 
 export const GridBlade : Project = {
@@ -10,7 +10,9 @@ export const GridBlade : Project = {
     backgroundImage: "/images/Projects/Gridblade/GridBladePoster.png",
     about: "Gridblade is a puzzle-adventure game where players use linear algebra to slash enemies. After falling into a dark cave you find a helpful frog called Ribbit. Ribbit hands you a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. The GridBlade requires enchants in the form of linear equations to work. The game was an accompaniment to a solo research paper which establishes direct correllations between game design and pedagogy.",
     carouselItems: [
-
+        <img src="/images/Projects/Gridblade/gbs.JPG.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/Gridblade/GridBladeRepresentativeImage.JPG.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/Gridblade/GridBladePoster.png" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
     ],
     experience: [
         ["Serious game design methodologies", 3],
@@ -48,9 +50,13 @@ export const SmartStep : Project = {
     name: "Smart±Step",
     subtitle: "A collection of exergames training balance and fall prevention.",
     tags: [TAGS.Serious, TAGS.Commercial],
-    backgroundImage: "",
-    about: "Rehabilitate. Falls & balance. Client Allity. Solo devloper. Software engineer. Revamping code.",
-    carouselItems: [],
+    backgroundImage: "/images/Projects/SmartStep/Linda-Step-Mat.png",
+    about: "Smart±Step is a collection of exergames played with a dance mat, designed to reduce falls risk in older people. After the systems were used for neuroscience research, the system needed to be updated and distributed for commercialisation. New features include multi-user support, automatic system updating, remote troubleshooting tools and a high score system. Now, Smart±Step is set up in 50+ aged care homes across Australia.",
+    carouselItems: [
+        <img src="/images/Projects/SmartStep/MainMenu.png" height={390} width={640} alt="broken"/>,
+        <img src="/images/Projects/SmartStep/Linda-Step-Mat.png" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/SmartStep/Training2.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+    ],
     experience: [
         ["Maintaining existing projects", 3],
         ["Documentation for developers and end-users", 3],
@@ -72,9 +78,13 @@ export const ChoiceStepper : Project = {
     name: "Choice Stepper Reaction Test",
     subtitle: "A research tool assessing reaction time in varied stimuli conditions.",
     tags: [TAGS.Serious],
-    backgroundImage: "",
+    backgroundImage: "/images/Projects/CSRT/1.jpg",
     about: "The Choice Stepper Reaction Time software a compilation of tasks used for researchers to test reaction times on participants' feet. Players step on arrows on a mat corresponding to instructions on screen. Variations include incongruence with distrating elements (e.g. a Left arrow labeled as \"Right\") and \"catcing\" arrows that fall with gravity. The project was once using legacy code, which prompted a decision to remake the software from scratch.",
-    carouselItems: [],
+    carouselItems: [
+        <img src="/images/Projects/CSRT/0.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/CSRT/1.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/CSRT/Training1.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+    ],
     experience: [
         ["Planning progress on existing projects", 3],
         ["Hardware-related UI considerations", 2],
@@ -88,10 +98,14 @@ export const SallysApples : Project = {
     name: "Sally's Apples VR",
     subtitle: "Retrieve Stacy's lost apples in VR while training hazard perception.",
     tags: [TAGS.Serious],
-    backgroundImage: "/other.jpg",
+    backgroundImage: "/images/Projects/SallysApples/HomeScreen(2).JPG",
     about: "Sally’s Apples VR is an exergame project designed to train hazard recognition and avoidance for the elderly. Along with the headset, the equipment also includes a motion capture system and an advanced dual-belt treadmill. In VR, players walk along a footpath while collecting floating apples with their hands. Players must avoid trip/slip hazards at their feet, otherwise, treadmill will cause a perturbation. The game was an accompaniment to a research project which assesses the impact of perturbations on balance safety in a simulated environment.",
     carouselItems: [
-        <YoutubeItem videoID="y0Pc--_MUwo"/>
+        <YoutubeItem videoID="y0Pc--_MUwo"/>,
+        <img src="/images/Projects/SallysApples/HomeTitle.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/SallysApples/Obstacle.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/SallysApples/ResearcherView.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/SallysApples/Shovel_001.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
     ],
     experience: [
         ["VR design considerations", 3],
@@ -112,13 +126,17 @@ export const LastIsland : Project = {
     tags: [TAGS.Serious],
     backgroundImage: "/images/Projects/LastIsland/state1.jpg",
     about: "Last Island is a cooperative digtally-assisted board game for 1-4 players whose mission is to sustain the last livable place on Earth. By taking turns in placing structure tiles on the field, players attempt balance population, environment health and production in order to maintain its society. The game was an accompaniment to a co-authored research paper which explores the possibilities of sustainable futures through play.",
-    carouselItems: [],
+    carouselItems: [
+        <img src="/images/Projects/LastIsland/state1.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/LastIsland/table.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/LastIsland/a.png" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/LastIsland/LastIslandLogo(2).png" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+    ],
     experience: [
         ["Data modelling and visualisation", 3],
         ["Collaboration on game design", 2],
         ["Adapting to research requirements", 2],
         ["Playtesting for data collection", 1],
-
     ]
 }
 
@@ -126,10 +144,14 @@ export const DescendantOfSoul : Project = {
     name: "Descendant of Soul",
     subtitle: "Unleash an arsenal of elemental spells in a combat-focused adventure.",
     tags: [TAGS.ForFun],
-    backgroundImage: "/images/Projects/DescendantOfSoul/dosPoster.png",
+    backgroundImage: "/images/Projects/DescendantOfSoul/Screenshot2(2).JPG",
     about: "Descendant Of Soul is a 3D action-adventure where you play as a character named Dos. Being the daughter of a weaponsmith and an elementalist, she harnesses both skills to defeat a team of bosses and discover her past. The game features a skill tree for different spells, allowing players to explore different combos and playstyles. ",
     carouselItems: [
-        <YoutubeItem videoID="3xGINJpLSp8"/>
+        <YoutubeItem videoID="3xGINJpLSp8"/>,
+        <img src="/images/Projects/DescendantOfSoul/Screenshot1.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/DescendantOfSoul/Screenshot2.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/DescendantOfSoul/Screenshot3.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
+        <img src="/images/Projects/DescendantOfSoul/dosPoster.png" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,        
     ],
     experience: [
         ["Constructing game design documentation", 3],
@@ -153,9 +175,9 @@ export const GetMeOut : Project = {
         <YoutubeItem videoID="b2gnY7oeugA"/>
     ],
     experience: [
-        ["Task delegation", 3],
+        ["Agile user stories", 3],
         ["Conflict resolution with divergent team members", 3],
-        ["Agile user stories", 2],
+        ["Task delegation", 2],
         ["Game sound design", 2],
         ["Version control with Unity Collaborate", 2],
         ["Object pooling", 1],
@@ -202,7 +224,7 @@ export const MusicCollection : Project = {
     subtitle: "Listen in to some of my songs and jingles!",
     tags: [TAGS.NonGame],
     backgroundImage: "/images/Projects/Music.png",
-    about: "",
+    about: "Music production is a little hobby of mine! I have been producing music as a past-time for about 10 years. I've enjoyed exploring different styles, moods and purpoes. Occasionally I use my music for games I produce, though I am yet to commit myself to the craft professionally. I would describe my comfort style as Electronica, Synth-Pop and Shoegaze.",
     carouselItems: [],
     experience: [
         ["Digital music composition", 3],

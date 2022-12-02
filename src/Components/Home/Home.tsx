@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Grid, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography, useMediaQuery } from "@mui/material";
 import Splash from "./Home-Splash";
 import ActionItems from "./Home-ActionItems";
 import achievementCards from "./Home-AchievementCards";
@@ -12,12 +12,14 @@ import { styled } from "@mui/material"
 import Achievements from "./Home-Achievements";
 import About from "./Home-About";
 
+
 /**Landing page
  * Summarises me and the page */
 export const Home = () => {
-
+        
     return (
-        <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display: 'flex', flexWrap: "nowrap"}}>
+        
+        <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display:'flex', flexWrap: "nowrap"}}>
 
                 <BackToTopButton showThreshold={700}/>
 
@@ -73,44 +75,24 @@ export const Home = () => {
                     </Grid>
 
                     <Grid container direction="column" xs={12}>
+                        <Box marginY={10}>
+                        <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
+                            <Grid container xs={3} minWidth={{md: 500}} direction="row" justifyContent="space-around" alignItems="center">
+                                <Button size="large" href="/Projects" variant="contained" color="player2">
+                                    <Typography color={"neutral.light"}>
+                                        Projects
+                                    </Typography>
+                                </Button>
 
-                    <Box marginTop={-10}>
-                    <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
-                        <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
-                            <Button size="large" href="/Projects" variant="contained" color="player2">
-                                <Typography color={"neutral.light"}>
-                                    Projects
-                                </Typography>
-                            </Button>
-
-                            <Button size="large" variant="outlined" color="player3">
-                                <Typography color={"player3.main"}>
-                                    Contact
-                                </Typography>
-                            </Button>
-                        </Grid>
-                        </Grid>
-                    </Box>
-
-                    </Grid>
-                    
-
-                    {/* <Grid id="achievements" container xs={8} minHeight={700} height={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"tan"}}>
-                        <Grid container sx={{position: 'relative', backgroundColor:"steelblue"}}>
-                            <Typography sx={{position: 'absolute'}} variant="h3"> 
-                                My Achievements
-                            </Typography>
-                            <Grid container
-                                direction="row" justifyContent="center" alignItems="center"
-                                columnGap={3}
-                                rowGap={3}
-                                sx={{marginTop:12}}>
-                            
-                                {achievementCards}
+                                <Button size="large" variant="outlined" color="player3">
+                                    <Typography color={"player3.main"}>
+                                        Contact
+                                    </Typography>
+                                </Button>
                             </Grid>
-                        </Grid>
-                    </Grid> */}
-                    
+                            </Grid>
+                        </Box>
+                    </Grid>                    
                 </Grid>
             </Box>
     );

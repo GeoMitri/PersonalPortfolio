@@ -5,6 +5,8 @@ import * as TAGS from "../../Data/ProjectTagsData";
 import { Tag, Project } from "../../Objects/Interfaces";
 import ProjectCard from "./Projects-ProjectCard";
 import FilterSelect from "./Projects-FilterSelect";
+import useWindowDimensions from "../../Objects/windowDimensions";
+
 
 const myProjects : [string, Project][] = Object.entries(DATA); 
 const myTags : Tag[] = Object.values(TAGS); 
@@ -43,8 +45,8 @@ export const Projects = () => {
                 <FilterSelect tagsCollection={myTags} currentTags={activeTags} onChangeFunction={onFilterChange}/>
 
                 {/* project list */}
-                <Grid container direction="row" justifyContent="center" alignItems="center"
-                rowGap={14} columnGap={14} margin={3} sx={{}}>
+                <Grid container direction="row" justifyContent="center" alignItems="flex-start"
+                rowGap={14} columnGap={14} margin={3} sx={{minHeight:useWindowDimensions().height}}>
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
                 </Grid>
 

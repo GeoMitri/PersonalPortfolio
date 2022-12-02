@@ -1,7 +1,7 @@
 import { Box, Card, Button, CardMedia, Chip, Grid, Icon, List, ListItem, ListSubheader, Typography, ListItemText, ListItemIcon, Tooltip } from "@mui/material";
 import { Project } from "../../Objects/Interfaces";
-import ProjectCarousel from "./ProjectTemplate-ProjectCarousel"; 
-import YoutubeItem from "../../PlayAround/YoutubeTesting"
+import ProjectCarousel from "./ProjectTemplate-Carousel"; 
+import YoutubeItem from "./ProjectTemplate-YoutubeItem"
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import HelpIcon from '@mui/icons-material/Help';
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
@@ -42,7 +42,7 @@ function ProjectTemplate(project :Project) {
                         {project.subtitle}
                     </Typography>
  
-                    <Grid container xs={12} direction="row" justifyContent="center" alignItems="center" marginBottom={2}>  
+                    <Grid container xs={12} direction="row" justifyContent="center" alignItems="center" marginBottom={6}>  
                         {project.tags.map((tag) => <Chip key={tag.name} icon={<Icon>{tag.icon}</Icon>} label={tag.name} sx={{marginRight:1}}/>)}
                     </Grid>
 
@@ -57,15 +57,19 @@ function ProjectTemplate(project :Project) {
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <Grid container xs={6} minWidth={400} display="flex" direction="row" justifyContent="center" alignItems="center">
-                        <Typography margin={5} align="left" variant="body1"> 
+                    <Grid container xs={6} minWidth={600} display="flex" direction="row" justifyContent="center" alignItems="center">
+                        <Typography margin={5} marginBottom={12} align="left" variant="body1"> 
                             {project.about}
                         </Typography>
                     </Grid>
                 </Grid>
 
-                <Grid container xs={12} sx={{backgroundColor:"gold"}} direction="column" justifyContent="center" alignItems="center">
-                    links go here
+                <Grid container xs={12} sx={{backgroundColor:"gold", marginBottom:12}} direction="column" justifyContent="center" alignItems="center">
+                    <Button size="large" href="/Contact" variant="contained" color="player3">
+                        <Typography color={"neutral.light"}>
+                            Buttons go here
+                        </Typography>
+                    </Button>
                 </Grid>
                 
                 {/* <Grid container xs={6} sx={{backgroundColor:"neutral.main"}}
@@ -150,7 +154,7 @@ function ProjectTemplate(project :Project) {
                         </Typography>
                     </Button>
 
-                    <Button size="large" variant="contained" color="player3">
+                    <Button size="large" href="/Contact" variant="contained" color="player3">
                         <Typography color={"neutral.light"}>
                             Contact
                         </Typography>

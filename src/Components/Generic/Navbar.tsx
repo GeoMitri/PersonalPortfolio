@@ -41,23 +41,18 @@ const ResponsiveAppBar = () => {
     switch(index) { 
       case 0: { 
         return("player1")
-        break; 
       } 
       case 1: { 
         return("player2")
-         break; 
       } 
       case 2: { 
         return("player3")
-        break; 
       }
       case 3: { 
         return("player4")
-        break; 
       }  
       default: { 
         return("player1")
-         break; 
       } 
    } 
   }
@@ -102,7 +97,7 @@ const ResponsiveAppBar = () => {
               ))}
             </Box>
 
-            <Button color='player4' disableElevation variant='contained' sx={{ my: 2, display: 'block' }}>
+            <Button color='player4' disableElevation variant='contained' sx={{ my: 2, display: {xs: "none", md: 'block'}}}>
               Download CV
             </Button>
 
@@ -143,21 +138,12 @@ const ResponsiveAppBar = () => {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
             <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href=""
+              color={"neutral.main"}
+              variant="h4"
               sx={{
-                mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
               }}>
               George Mitri
             </Typography>
