@@ -32,7 +32,7 @@ function ProjectCard(props:projectCardProps) {
             onMouseOver={() => onHoverIn()}
             onMouseOut={() => onHoverOut()}
         >
-                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: {xs:300, md: 400}, width: {xs:300, md: 400}, backgroundColor: "neutral.main"}}>
+                <CardActionArea href={"/PersonalPortfolio/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: {xs:300, md: 400}, width: {xs:300, md: 400}, backgroundColor: "neutral.main"}}>
                     <CardMedia
                         component="img"
                         image={props.projectRef[1].backgroundImage}

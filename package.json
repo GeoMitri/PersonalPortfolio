@@ -1,5 +1,5 @@
 {
-  "homepage": "https://geomitri.github.io/",
+  "homepage": "https://geomitri.github.io/PersonalPortfolio",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,8 +23,8 @@
     "react-dom": "^18.2.0",
     "react-material-ui-carousel": "^3.4.2",
     "react-native": "^0.70.6",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "6.3.0",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.8",
     "react-scroll-to": "^3.0.0-beta.6",
     "react-social-icons": "^5.15.0",

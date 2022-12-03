@@ -1,8 +1,6 @@
-import {Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 //Components
 import { Home } from './Components/Home/Home';
-//Style
-import X from './PlayAround/GlobalStyling';
 //MUI
 import Button from "@mui/material/Button";
 import ResponsiveAppBar from './Components/Generic/Navbar';
@@ -17,30 +15,36 @@ import { Project } from "./Objects/Interfaces";
 import snesTheme from "./Components/Generic/Theme";
 
 
-
-
-
 function App() {
 
     const myProjects : [string, Project][] = Object.entries(PROJECTS_DATA);
+    
+    // const router = createBrowserRouter(
+    //   createRoutesFromElements(
+    //     <Route>
+    //       <Route path="/PersonalPortfolio" element={<Home />}/>
+    //       <Route path="/PersonalPortfolio/Projects" element={<Projects />}/>
+    //       {myProjects.map((proj) => <Route path={"/PersonalPortfolio/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
+    //       <Route path="/PersonalPortfolio/Contact" element={<Contact/>}/> 
+    //     </Route>
+    //   )
+    // );
 
     return (
-    <ThemeProvider theme={snesTheme}>      
-    <div className="App">
-      <ResponsiveAppBar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        {/* <Route path="/" element={<FullpageTesting/>}/> */}
-        <Route path="/Projects" element={<Projects />}/>
-        {myProjects.map((proj) => <Route path={"/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
-
-        <Route path="/Contact" element={<Contact/>}/> 
-        {/* temp used for ProjectTemplate */}
-        {/* <Route path="/Testing" element={<ProjectTemplate {...PROJECTS_DATA.GridBlade}/>}/>  */}
-      </Routes>
-    </div>
-    </ThemeProvider>
-    
+      <ThemeProvider theme={snesTheme}>      
+      <div className="App">
+        <ResponsiveAppBar />
+        <BrowserRouter>
+        <Routes>
+        <Route path="/PersonalPortfolio" element={<Home />}/>
+          <Route path="/PersonalPortfolio/Projects" element={<Projects />}/>
+          {myProjects.map((proj) => <Route path={"/PersonalPortfolio/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
+          <Route path="/PersonalPortfolio/Contact" element={<Contact/>}/> 
+        </Routes>
+        </BrowserRouter>
+        {/* <RouterProvider router={router}/>  */}
+      </div>
+      </ThemeProvider>
   );
 }
 

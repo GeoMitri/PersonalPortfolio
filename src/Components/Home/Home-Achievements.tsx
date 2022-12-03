@@ -10,7 +10,7 @@ const Achievements =
                 <Typography variant="h2" gutterBottom color={"player1.main"}> 
                     Achievements
                 </Typography>
-                <Grid container xs={12} sx={{backgroundColor:"red"}}
+                <Grid container xs={12}
                     direction="row" justifyContent="center" alignItems="center"
                     columnGap={3}
                     rowGap={3}
