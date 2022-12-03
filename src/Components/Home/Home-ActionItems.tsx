@@ -14,7 +14,7 @@ const ActionItems =
             {/* <Typography>
             I make stuff!
             </Typography> */}
-            <Button size="large" href="/PersonalPortfolio/Projects" variant="contained" color="player2">
+            <Button size="large" href="/#/Projects" variant="contained" color="player2">
                 <Typography color={"neutral.light"}>
                     View Projects
                 </Typography>
