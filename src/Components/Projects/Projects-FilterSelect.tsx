@@ -1,4 +1,4 @@
-import { Grid, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { Grid, ToggleButton, ToggleButtonGroup, Typography } from "@mui/material";
 import { Tag } from "../../Objects/Interfaces";
 import { styled } from "@mui/material/styles";
 import { ReactNode, useState } from "react";
@@ -67,11 +67,15 @@ function FilterSelect(props : FilterSelectProps) {
             exclusive
             aria-label="tag-filters">
                 <StyledToggleButton value={"all"} aria-label="all">
-                    All
+                    <Typography variant="h5">
+                        All
+                    </Typography>
                 </StyledToggleButton>
                 {props.tagsCollection.map((tag) =>
                     <StyledToggleButton value={tag.name} aria-label={tag.name}>
-                        {tag.name}
+                        <Typography variant="h5">
+                           {tag.name}
+                        </Typography>
                     </StyledToggleButton>
                 )}
             </ToggleButtonGroup>

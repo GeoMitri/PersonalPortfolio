@@ -28,11 +28,11 @@ function ProjectCard(props:projectCardProps) {
     }
 
     return(
-        <Card key={props.projectRef[1].name} sx={{height: 400, width: 400, borderRadius: '5%', backgroundColor: "DarkSlateBlue"}}
+        <Card key={props.projectRef[1].name} sx={{height: {xs:300, md: 400}, width: {xs:300, md: 400}, borderRadius: '5%', backgroundColor: "DarkSlateBlue"}}
             onMouseOver={() => onHoverIn()}
             onMouseOut={() => onHoverOut()}
         >
-                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: 400, width: 400,backgroundColor: "neutral.main"}}>
+                <CardActionArea href={"/Projects/" + props.projectRef[0]} sx={{position: 'relative', height: {xs:300, md: 400}, width: {xs:300, md: 400}, backgroundColor: "neutral.main"}}>
                     <CardMedia
                         component="img"
                         image={props.projectRef[1].backgroundImage}

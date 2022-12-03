@@ -133,17 +133,25 @@ const ResponsiveAppBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Button href={(page === "Home") ? "/" : "/"+page.toString()}>
                     <Typography textAlign="center">{page}</Typography>
+                    </Button>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
             <Typography
-              color={"neutral.main"}
-              variant="h4"
+              variant="h6"
+              component="a"
+              href="/"
               sx={{
+                mr: 2,
                 display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
+                flexGrow:1,
+                fontWeight: 700,
+                letterSpacing: '.1rem',
+                color: 'neutral.dark',
+                textDecoration: 'none',
               }}>
               George Mitri
             </Typography>

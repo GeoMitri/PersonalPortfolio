@@ -5,7 +5,7 @@ import useWindowDimensions from "../../Objects/windowDimensions";
 /**First eye-catching cover section of Home */
 const Splash = 
     <>
-        <Grid container direction="column" justifyContent="center" alignItems="baseline" xs={12} md={7} sx={{marginTop:18, display:{xs:"initial", md:"initial"}}}>
+        <Grid container direction="column" justifyContent="center" alignItems="baseline" xs={12} md={7} sx={{marginTop:{xs:7, md:18}, display:{xs:"initial", md:"initial"}}}>
             <Typography variant="h4" color={"neutral.dark"}> 
             Hi! I'm
             </Typography>

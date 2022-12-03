@@ -46,7 +46,7 @@ export const Projects = () => {
 
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="flex-start"
-                rowGap={14} columnGap={14} margin={3} sx={{minHeight:useWindowDimensions().height}}>
+                rowGap={{xs:10, md: 14}} columnGap={14} margin={3} sx={{minHeight:useWindowDimensions().height}}>
                     {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
                 </Grid>
 
