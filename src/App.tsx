@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { createHashRouter, RouterProvider, Route, Routes} from "react-router-dom";
 //Components
 import { Home } from './Components/Home/Home';
 //MUI
@@ -19,30 +19,36 @@ function App() {
 
     const myProjects : [string, Project][] = Object.entries(PROJECTS_DATA);
     
-    // const router = createBrowserRouter(
-    //   createRoutesFromElements(
-    //     <Route>
-    //       <Route path="/PersonalPortfolio" element={<Home />}/>
-    //       <Route path="/PersonalPortfolio/Projects" element={<Projects />}/>
-    //       {myProjects.map((proj) => <Route path={"/PersonalPortfolio/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
-    //       <Route path="/PersonalPortfolio/Contact" element={<Contact/>}/> 
-    //     </Route>
-    //   )
-    // );
+    const router = createHashRouter([
+      {
+        path: '/',
+        element: <Home/>,
+      }, {
+        path: '/contact',
+        element: <Contact/>
+      }, {
+        path: '/projects',
+        element: <Projects/>,
+        children: myProjects.map((proj) => { return {
+          path: proj[0],
+          element: <ProjectTemplate {...proj[1]}/>
+        }}) 
+      }
+    ]);
 
     return (
       <ThemeProvider theme={snesTheme}>      
       <div className="App">
         <ResponsiveAppBar />
-        <BrowserRouter>
+        {/* <BrowserRouter>
         <Routes>
         <Route path="/PersonalPortfolio" element={<Home />}/>
           <Route path="/PersonalPortfolio/Projects" element={<Projects />}/>
           {myProjects.map((proj) => <Route path={"/PersonalPortfolio/Projects/" + proj[0]} element={<ProjectTemplate {...proj[1]}/>}/>)}
           <Route path="/PersonalPortfolio/Contact" element={<Contact/>}/> 
         </Routes>
-        </BrowserRouter>
-        {/* <RouterProvider router={router}/>  */}
+        </BrowserRouter> */}
+        <RouterProvider router={router}/> 
       </div>
       </ThemeProvider>
   );
