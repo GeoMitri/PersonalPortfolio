@@ -68,7 +68,7 @@ const ResponsiveAppBar = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/PersonalPortfolio/"
+              href="/#/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -83,7 +83,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page, i) => (
                 <Button
                 key={page}
-                  href={(page === "Home") ? "/PersonalPortfolio/" : "/PersonalPortfolio/"+page.toString()}
+                  href={(page === "Home") ? "/#/" : "/#/"+page.toString()}
                   
                   onClick={handleCloseNavMenu}
                   color={colorPerPage(i)}
@@ -133,7 +133,7 @@ const ResponsiveAppBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Button href={(page === "Home") ? "/PersonalPortfolio/" : "/PersonalPortfolio/"+page.toString()}>
+                    <Button href={(page === "Home") ? "/#/" : "/#/"+page.toString()}>
                     <Typography textAlign="center">{page}</Typography>
                     </Button>
                   </MenuItem>

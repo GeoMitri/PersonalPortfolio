@@ -13,7 +13,7 @@ function ProjectTemplate(project :Project) {
         <Box bgcolor="neutral.light" sx={{display: 'flex', flexWrap: "startIcon={} nowrap"}}>
             
             <Box position={"absolute"} sx={{left:100, top:100}}>
-                <Button startIcon={<ArrowLeftIcon/>} size="medium" href="/PersonalPortfolio/Projects" variant="outlined" color="player2">
+                <Button startIcon={<ArrowLeftIcon/>} size="medium" href="/#/Projects" variant="outlined" color="player2">
                     <Typography color={"player2.main"}>
                         Projects
                     </Typography>
@@ -137,13 +137,13 @@ function ProjectTemplate(project :Project) {
                 <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                 <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
 
-                    <Button size="large" href="/PersonalPortfolio/Projects" variant="outlined" color="player2">
+                    <Button size="large" href="/#/Projects" variant="outlined" color="player2">
                         <Typography color={"player2.main"}>
                             More Projects
                         </Typography>
                     </Button>
 
-                    <Button size="large" href="/PersonalPortfolio/Contact" variant="contained" color="player3">
+                    <Button size="large" href="/#/Contact" variant="contained" color="player3">
                         <Typography color={"neutral.light"}>
                             Contact
                         </Typography>
