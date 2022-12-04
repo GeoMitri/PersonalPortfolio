@@ -65,19 +65,47 @@ function FilterSelect(props : FilterSelectProps) {
             value={tagLabel}
             onChange={handleChange}
             exclusive
-            aria-label="tag-filters">
+            aria-label="tag-filters"
+            sx={{display:{xs:"inherit", md:"none"}}}>
+                
                 <StyledToggleButton value={"all"} aria-label="all">
                     <Typography variant="h5">
                         All
                     </Typography>
                 </StyledToggleButton>
+                
                 {props.tagsCollection.map((tag) =>
-                    <StyledToggleButton value={tag.name} aria-label={tag.name}>
-                        <Typography variant="h5">
-                           {tag.name}
-                        </Typography>
-                    </StyledToggleButton>
+                    {if(tag.name.toLowerCase() !== "PLAYABLE".toLowerCase() ) return(
+                        <StyledToggleButton value={tag.name} aria-label={tag.name}>
+                            <Typography variant="h5">
+                            {tag.name}
+                            </Typography>
+                        </StyledToggleButton>
+                    )}
                 )}
+
+            </ToggleButtonGroup>
+            <ToggleButtonGroup
+            value={tagLabel}
+            onChange={handleChange}
+            exclusive
+            aria-label="tag-filters"
+            sx={{display:{xs:"none", md:"inherit"}}}>
+                
+                <StyledToggleButton value={"all"} aria-label="all">
+                    <Typography variant="h5">
+                        All
+                    </Typography>
+                </StyledToggleButton>
+                
+                {props.tagsCollection.map((tag) =>
+                        <StyledToggleButton value={tag.name} aria-label={tag.name}>
+                            <Typography variant="h5">
+                            {tag.name}
+                            </Typography>
+                        </StyledToggleButton>
+                )}
+
             </ToggleButtonGroup>
         </Grid>
     </>)

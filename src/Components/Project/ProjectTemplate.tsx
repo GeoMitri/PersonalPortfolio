@@ -46,8 +46,8 @@ function ProjectTemplate(project :Project) {
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <Grid container xs={6} minWidth={600} display="flex" direction="row" justifyContent="center" alignItems="center">
-                        <Typography margin={5} marginBottom={12} align="left" variant="body1"> 
+                    <Grid container xs={12} md={6} minWidth={{xs:0, md:600}} display="flex" direction="row" justifyContent="center" alignItems="center">
+                        <Typography marginX={{xs:0, md:5}} marginY={5} marginBottom={12} align="left" variant="body1"> 
                             {project.about}
                         </Typography>
                     </Grid>

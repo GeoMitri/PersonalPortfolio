@@ -19,11 +19,10 @@ function ProjectCarousel(props : ProjectCarouselProps) {
         animation={"slide"}
         autoPlay={false}
         navButtonsAlwaysVisible
-        height={430}
         indicatorContainerProps={{style:{marginTop:-20}}}
         //indicators={false}
         navButtonsWrapperProps={{style:{height:100, top:145}}}
-        sx={{width:640, margin:3,}}
+        sx={{height:{xs:430/2,md:430}, width:{xs:640/2, md:640}, margin:3}}
         children={
             props.items
         }

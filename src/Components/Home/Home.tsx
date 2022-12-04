@@ -21,7 +21,7 @@ export const Home = () => {
         
         <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display:'flex', flexWrap: "nowrap"}}>
 
-                <BackToTopButton showThreshold={700}/>
+                <BackToTopButton showThreshold={useWindowDimensions().height/4}/>
 
                 <Grid container direction="row" justifyContent="center" alignItems="center">
 
@@ -43,7 +43,7 @@ export const Home = () => {
                     <Grid container id="missions" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                        <Grid container xs={11} md={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative', backgroundColor:"neutral.light"}}>
                             {Missions}
                             <NextSectionButton elementID="about" />
                         </Grid>
@@ -56,7 +56,7 @@ export const Home = () => {
                     <Grid container id="about" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                        <Grid container xs={11} md={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
                             {About}
                             <NextSectionButton elementID="achievements" />
                         </Grid>
@@ -69,7 +69,7 @@ export const Home = () => {
                     <Grid container id="achievements" xs={12} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} 
                         sx={{position: 'relative', backgroundColor:"neutral.light"}}>
 
-                        <Grid container xs={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative'}}>
+                        <Grid container xs={11} md={7} justifyContent="center" alignItems="center" minHeight={useWindowDimensions().height-70} sx={{position: 'relative', marginTop:8}}>
                             {Achievements}
                         </Grid>
                     </Grid>

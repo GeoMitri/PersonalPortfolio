@@ -12,7 +12,6 @@ function BackToTopButton(props:BackToTopButtonProps) {
     
     function updateVisible()
     {
-        // console.log("sfsfd");
         var pos = window.scrollY >= props.showThreshold ? 0 : -160;
         setvisiblePos(pos)
     }

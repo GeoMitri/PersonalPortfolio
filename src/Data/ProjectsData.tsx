@@ -3,6 +3,13 @@ import {Project} from "../Objects/Interfaces";
 import YoutubeItem from "../Components/Project/ProjectTemplate-YoutubeItem";
 import Carousel from "react-material-ui-carousel";
 
+const sizes = {
+    xsH: 390/2,
+    xsW: 640/2,
+    msH: 390,
+    msW: 640,
+}
+
 export const GridBlade : Project = {
     name: "GridBlade",
     subtitle: "Learn linear algebra concepts through turn-based combat.",
@@ -78,11 +85,11 @@ export const ChoiceStepper : Project = {
     name: "Choice Stepper Reaction Test",
     subtitle: "A research tool assessing reaction time in varied stimuli conditions.",
     tags: [TAGS.Serious],
-    backgroundImage: "/images/Projects/CSRT/1.jpg",
+    backgroundImage: "/images/Projects/CSRT/1.JPG",
     about: "The Choice Stepper Reaction Time software a compilation of tasks used for researchers to test reaction times on participants' feet. Players step on arrows on a mat corresponding to instructions on screen. Variations include incongruence with distrating elements (e.g. a Left arrow labeled as \"Right\") and \"catcing\" arrows that fall with gravity. The project was once using legacy code, which prompted a decision to remake the software from scratch.",
     carouselItems: [
-        <img src="/images/Projects/CSRT/0.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
-        <img src="/images/Projects/CSRT/1.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/CSRT/0.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
+        <img src="/images/Projects/CSRT/1.JPG" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
         <img src="/images/Projects/CSRT/Training1.jpg" height={390} width={640} style={{objectFit:"contain"}} alt="broken"/>,
     ],
     experience: [

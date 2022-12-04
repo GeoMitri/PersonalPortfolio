@@ -32,6 +32,11 @@ const snesTheme = createTheme({
           light: "#dbdbdb",
           dark: "#34332f",
         },
+        secondary: {
+          main: '#707372',
+          light: "#dbdbdb",
+          dark: "#34332f",
+        }
       },
     typography: {
         fontFamily: [

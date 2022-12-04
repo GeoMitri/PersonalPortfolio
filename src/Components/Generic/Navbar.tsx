@@ -109,7 +109,7 @@ const ResponsiveAppBar = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="secondary"
               >
                 <MenuIcon />
               </IconButton>
@@ -141,7 +141,7 @@ const ResponsiveAppBar = () => {
               </Menu>
             </Box>
             <Typography
-              variant="h6"
+              variant="h4"
               component="a"
               href="/"
               sx={{
