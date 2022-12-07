@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Box, Grid, Typography, } from "@mui/material";
 import * as DATA from "../../Data/ProjectsData";
 import * as TAGS from "../../Data/ProjectTagsData";
@@ -6,6 +6,7 @@ import { Tag, Project } from "../../Objects/Interfaces";
 import ProjectCard from "./Projects-ProjectCard";
 import FilterSelect from "./Projects-FilterSelect";
 import useWindowDimensions from "../../Objects/windowDimensions";
+import { useLocation } from "react-router-dom";
 
 
 const myProjects : [string, Project][] = Object.entries(DATA); 
@@ -15,6 +16,11 @@ const myTags : Tag[] = Object.values(TAGS);
  * Filter via tags */
 export const Projects = () => {
     
+    const location = useLocation();
+    useLayoutEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [location.pathname]);
+
     const [displayedProjects, setDisplayedProjects] = useState<[string, Project][] | null>(myProjects);
     const [activeTags, setActiveTags] = useState<Tag[] | null>(myTags);
 
@@ -31,6 +37,8 @@ export const Projects = () => {
             setDisplayedProjects(newDisplayedProjects);
         }
     };
+
+
 
     return (
 

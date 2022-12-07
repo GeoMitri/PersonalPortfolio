@@ -14,7 +14,7 @@ const ActionItems =
             {/* <Typography>
             I make stuff!
             </Typography> */}
-            <Button size="large" href="/#/Projects" variant="contained" color="player2">
+            <Button size="large" href="/#/Projects" variant="contained" color="player2" sx={{margin:1}}>
                 <Typography color={"neutral.light"}>
                     View Projects
                 </Typography>
@@ -25,7 +25,8 @@ const ActionItems =
             </Typography> */}
             <Button size="large" 
             onClick={() => {Scroll.animateScroll.scrollTo(document.getElementById("missions")!.offsetTop-70)}}
-            variant="outlined" color="player1">
+            variant="outlined" color="player1"
+            sx={{margin:1}}>
                 <Typography color={"player1.main"}>
                     Learn More
                 </Typography>

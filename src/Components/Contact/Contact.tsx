@@ -6,11 +6,20 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailForm from './Contact-EmailForm';
 import { SocialIcon } from 'react-social-icons';
+import { useLocation } from 'react-router-dom';
+import { useLayoutEffect } from "react";
+
 
 /** My socials + email me via email.js 
  * TODO: Socials buttons
 */
 function Contact() { 
+
+    const location = useLocation();
+    useLayoutEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [location.pathname]);
+
     return(
         <Box bgcolor="neutral.light" sx={{display: 'flex', flexWrap: "nowrap",}}>
         <Grid container direction="row" justifyContent="center" alignItems="left" margin={3}>

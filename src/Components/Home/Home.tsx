@@ -12,11 +12,19 @@ import { styled } from "@mui/material"
 import Achievements from "./Home-Achievements";
 import About from "./Home-About";
 
+import { useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
+
 
 /**Landing page
  * Summarises me and the page */
 export const Home = () => {
-        
+
+    const location = useLocation();
+    useLayoutEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [location.pathname]);
+
     return (
         
         <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display:'flex', flexWrap: "nowrap"}}>
@@ -78,13 +86,13 @@ export const Home = () => {
                         <Box marginY={10}>
                         <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                             <Grid container xs={3} minWidth={{md: 500}} direction="row" justifyContent="space-around" alignItems="center">
-                                <Button size="large" href="/#/Projects" variant="contained" color="player2">
+                                <Button size="large" href="/#/Projects" variant="contained" color="player2" sx={{margin:1}}>
                                     <Typography color={"neutral.light"}>
                                         Projects
                                     </Typography>
                                 </Button>
 
-                                <Button size="large" href="/#/Contact" variant="outlined" color="player3">
+                                <Button size="large" href="/#/Contact" variant="outlined" color="player3" sx={{margin:1}}>
                                     <Typography color={"player3.main"}>
                                         Contact
                                     </Typography>

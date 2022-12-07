@@ -5,14 +5,22 @@ import YoutubeItem from "./ProjectTemplate-YoutubeItem"
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import HelpIcon from '@mui/icons-material/Help';
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
+import { useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
 
 
 /** Templaye used to construct pages for Project Instances*/
-function ProjectTemplate(project :Project) { 
+function ProjectTemplate(project :Project) {
+
+    const location = useLocation();
+    useLayoutEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [location.pathname]);
+
     return(
         <Box bgcolor="neutral.light" sx={{display: 'flex', flexWrap: "startIcon={} nowrap"}}>
             
-            <Box position={"absolute"} sx={{left:100, top:100}}>
+            <Box position={"absolute"} sx={{left:{xs:20, md:100}, top:{xs:80, md:100}}}>
                 <Button startIcon={<ArrowLeftIcon/>} size="medium" href="/#/Projects" variant="outlined" color="player2">
                     <Typography color={"player2.main"}>
                         Projects
@@ -53,20 +61,9 @@ function ProjectTemplate(project :Project) {
                     </Grid>
                 </Grid>
 
-                <Grid container xs={12} sx={{backgroundColor:"gold", marginBottom:12}} direction="column" justifyContent="center" alignItems="center">
-                    <Button size="large" href="/Contact" variant="contained" color="player3">
-                        <Typography color={"neutral.light"}>
-                            Buttons go here
-                        </Typography>
-                    </Button>
+                <Grid container xs={12} sx={{marginBottom:12}} direction="row" justifyContent="center" alignItems="center">
+                    {project.ExternalItems}
                 </Grid>
-                
-                {/* <Grid container xs={6} sx={{backgroundColor:"neutral.main"}}
-                display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <Typography margin={5} align="left" variant="body1"> 
-                        {project.about}
-                    </Typography>
-                </Grid> */}
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
@@ -95,55 +92,18 @@ function ProjectTemplate(project :Project) {
                         <ListItem></ListItem>
                     </List>
                 </Grid>
-
-                {/* <Grid container xs={6} 
-                display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <List sx={{ listStyleType: 'disc' }}>
-                        <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
-                            <Typography align="center" variant="h6"> 
-                                Personal Rank
-                            </Typography>
-                        </ListSubheader>
-                        <ListItem >A-</ListItem>
-                        <ListItem>Your search may have been removed or is not yet in the system</ListItem>
-                    </List>
-                </Grid> */}
-            
-                {/* <Grid container xs={6} direction="column" justifyContent="center" alignItems="center">
-                    <List sx={{ listStyleType: 'disc' }}>
-                    <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
-                            <Typography align="center" variant="h6"> 
-                                F.A.Q
-                            </Typography>
-                        </ListSubheader>
-                        <ListItem sx={{ display: 'list-item' }}>Why do you do this?</ListItem>
-                        <ListItem >It Is Only If It Is.</ListItem>
-                    </List>
-                </Grid>
-
-                <Grid container xs={6} sx={{backgroundColor:"neutral.light"}} direction="column" justifyContent="center" alignItems="center">
-                    <List sx={{ listStyleType: 'disc' }}>
-                        <ListSubheader sx={{border:3, borderColor:"player2.main", backgroundColor:"neutral.light", color:"player2.main", borderRadius:6}}>
-                            <Typography align="center" variant="h6"> 
-                                Roles
-                            </Typography>
-                        </ListSubheader>
-                        <ListItem sx={{ display: 'list-item' }}>Sound Engineer</ListItem>
-                    </List>
-                </Grid> */}
-
                 </Grid>
 
                 <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
-                <Grid container xs={3} sx={{minWidth:500}} direction="row" justifyContent="space-around" alignItems="center">
+                <Grid container xs={3} sx={{minWidth:{xs:0,md:500}}} direction="row" justifyContent="space-around" alignItems="center">
 
-                    <Button size="large" href="/#/Projects" variant="outlined" color="player2">
+                    <Button size="large" href="/#/Projects" sx={{minWidth:180, margin:1}} variant="outlined" color="player2">
                         <Typography color={"player2.main"}>
                             More Projects
                         </Typography>
                     </Button>
 
-                    <Button size="large" href="/#/Contact" variant="contained" color="player3">
+                    <Button size="large" href="/#/Contact" variant="contained" color="player3" sx={{margin:1}}>
                         <Typography color={"neutral.light"}>
                             Contact
                         </Typography>
