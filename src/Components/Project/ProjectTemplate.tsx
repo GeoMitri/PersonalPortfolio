@@ -87,8 +87,8 @@ function ProjectTemplate(project :Project) {
                                 </ListItemIcon>
                                 <ListItemText primary={xp[0]} sx={{marginY:-2.4, display:'flex'}}/>
                             </ListItem>
-                            )}
-                        <ListItem ></ListItem>
+                        )}
+                        <ListItem></ListItem>
                         <ListItem></ListItem>
                     </List>
                 </Grid>

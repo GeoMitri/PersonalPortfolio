@@ -55,7 +55,8 @@ export const Projects = () => {
                 {/* project list */}
                 <Grid container direction="row" justifyContent="center" alignItems="flex-start"
                 rowGap={{xs:10, md: 14}} columnGap={14} margin={3} sx={{minHeight:useWindowDimensions().height}}>
-                    {displayedProjects?.map((project) => <ProjectCard projectRef={project}/>)}
+                    {displayedProjects?.map((project) => {if (project[1].tags.includes(TAGS.Favourite)) {return <ProjectCard projectRef={project}/>}})}
+                    {displayedProjects?.map((project) => {if (!project[1].tags.includes(TAGS.Favourite)) {return <ProjectCard projectRef={project}/>}})}
                 </Grid>
 
             </Grid>

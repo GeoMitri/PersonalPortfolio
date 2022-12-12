@@ -17,7 +17,7 @@ const sizes = {
 export const GridBlade : Project = {
     name: "GridBlade",
     subtitle: "Learn linear algebra concepts through turn-based combat.",
-    tags: [TAGS.Serious, TAGS.Playable],
+    tags: [TAGS.Serious, TAGS.Playable, TAGS.Favourite],
     backgroundImage: "/images/Projects/Gridblade/GridBladePoster.png",
     about: "Gridblade is a puzzle-adventure game where players use linear algebra to slash enemies. After falling into a dark cave you find a helpful frog called Ribbit. Ribbit hands you a weapon called the GridBlade, which has the power to slash lines in the air to strike enemies. The GridBlade requires enchants in the form of linear equations to work. The game was an accompaniment to a solo research paper which establishes direct correllations between game design and pedagogy.",
     carouselItems: [
@@ -40,15 +40,25 @@ export const GridBlade : Project = {
                 Short Paper
             </Typography>
         </Button>
+        <Button size="large" href="https://sorzee.itch.io/gridblade" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <SportsEsportsIcon/>        
+            <Typography color={"neutral.light"}>
+                Play
+            </Typography>
+        </Button>
     </>}
 
 export const SteppingStones : Project = {
     name: "Stepping Stones",
     subtitle: "Solve colourful puzzles with Steppa the Rabbit.",
-    tags: [TAGS.ForFun, TAGS.Commercial, TAGS.Playable],
+    tags: [TAGS.ForFun, TAGS.Commercial, TAGS.Playable, TAGS.Favourite],
     backgroundImage: "/images/Projects/SteppingStones/JustSteppa.jpg",
     about: "Stepping Stones is a procedurally-generated puzzle game solved by controlling a rabbit named Steppa. Each time she steps on a Stepping Stone, it iterates to the next colour. I spent most of my design time refining the difficulty and timer algorithms. The intention was to create an accessible game anyone could play, while rewarding mastery with greater challenges and rewards. Stepping Stones is my first commercialised solo project, available now on both Google Play and iOS App Store",
-    carouselItems: [],
+    carouselItems: [
+        <YoutubeItem videoID="Si7zGLAJ8Eo" />,
+        <img src="/images/Projects/SteppingStones/BeeHard.png" height={390} width={640} style={{ objectFit: "contain" }} alt="broken" />,
+        <img src="/images/Projects/SteppingStones/SSShop.jpg" height={390} width={640} style={{ objectFit: "contain" }} alt="broken" />,
+    ],
     experience: [
         ["Scoping for publishing-related tasks", 3],
         ["App store release procedures", 3],
@@ -129,7 +139,7 @@ export const ChoiceStepper : Project = {
 export const SallysApples : Project = {
     name: "Sally's Apples VR",
     subtitle: "Retrieve Stacy's lost apples in VR while training hazard perception.",
-    tags: [TAGS.Serious],
+    tags: [TAGS.Serious, TAGS.Favourite],
     backgroundImage: "/images/Projects/SallysApples/HomeScreen(2).JPG",
     about: "Sally’s Apples VR is an exergame project designed to train hazard recognition and avoidance for the elderly. Along with the headset, the equipment also includes a motion capture system and an advanced dual-belt treadmill. In VR, players walk along a footpath while collecting floating apples with their hands. Players must avoid trip/slip hazards at their feet, otherwise, treadmill will cause a perturbation. The game was an accompaniment to a research project which assesses the impact of perturbations on balance safety in a simulated environment.",
     carouselItems: [
@@ -156,7 +166,7 @@ export const SallysApples : Project = {
 export const LastIsland : Project = {
     name: "Last Island",
     subtitle: "Save the planet from destruction using real sustainability models.",
-    tags: [TAGS.Serious],
+    tags: [TAGS.Serious, TAGS.Favourite],
     backgroundImage: "/images/Projects/LastIsland/state1.jpg",
     about: "Last Island is a cooperative digtally-assisted board game for 1-4 players whose mission is to sustain the last livable place on Earth. By taking turns in placing structure tiles on the field, players attempt balance population, environment health and production in order to maintain its society. The game was an accompaniment to a co-authored research paper which explores the possibilities of sustainable futures through play.",
     carouselItems: [
@@ -228,9 +238,9 @@ export const DescendantOfSoul : Project = {
 export const GetMeOut : Project = {
     name: "Get Me Out!",
     subtitle: "Escape gauntlets by apparating your own platforms.",
-    tags: [TAGS.ForFun],
+    tags: [TAGS.ForFun, TAGS.Playable],
     backgroundImage: "/images/Projects/GetMeOut/Image.png",
-    about: "Get Me Out! is a retro-inspired platformer where players add their own platforms to complete each level.",
+    about: "Get Me Out! is a retro-inspired platformer where players add their own platforms to complete each level. Traverse three different worlds with increasingly difficult puzzles and obstacles while revisiting classic arcade-style levels.",
     carouselItems: [
         <YoutubeItem videoID="b2gnY7oeugA" />
     ],
@@ -238,6 +248,7 @@ export const GetMeOut : Project = {
         ["Agile user stories", 3],
         ["Conflict resolution with divergent team members", 3],
         ["Task delegation", 2],
+        ["Brainstorming techniques", 2],
         ["Game sound design", 2],
         ["Version control with Unity Collaborate", 2],
         ["Object pooling", 1],
@@ -246,8 +257,9 @@ export const GetMeOut : Project = {
     ],
     ExternalItems: <>
         <Button size="large" href="https://drive.google.com/open?id=1y0-enKzeFqmb75_nWKY9N5vwgA2EEAYD" variant="contained" color="player2" sx={{margin:1}}>
+            <SportsEsportsIcon/>
             <Typography color={"neutral.light"}>
-                Projects
+                Download (Windows)
             </Typography>
         </Button>
     </>}
@@ -277,7 +289,10 @@ export const WatchDesignerPro : Project = {
     tags: [TAGS.NonGame],
     backgroundImage: "/images/Projects/WatchDesignerPro/w2Cropped.png",
     about: "Watch Designer Pro is a proof-of-concept mobile application where users customise their own watch face to later be 3D printed in production. The development approach was founded on \"blend shapes\", which allowed different variations of a watch face to be tweened between. This project was in collaboration with commercial partners at the University of Technology.",
-    carouselItems: [],
+    carouselItems: [
+        <img src="/images/Projects/WatchDesignerPro/w1.PNG.png" height={390} width={640} style={{ objectFit: "contain" }} alt="broken" />,
+        <img src="/images/Projects/WatchDesignerPro/w2.PNG.png" height={390} width={640} style={{ objectFit: "contain" }} alt="broken" />,
+    ],
     experience: [
         ["Communicating between a client and developers", 3],
         ["Mobile UI design and development", 2],
@@ -294,19 +309,19 @@ export const WatchDesignerPro : Project = {
     
 }
 
-export const MusicCollection : Project = {
-    name: "Music (Collection)",
-    subtitle: "Listen in to some of my songs and jingles!",
-    tags: [TAGS.NonGame],
-    backgroundImage: "/images/Projects/Music.png",
-    about: "Music production is a little hobby of mine! I have been producing music as a past-time for about 10 years. I've enjoyed exploring different styles, moods and purpoes. Occasionally I use my music for games I produce, though I am yet to commit myself to the craft professionally. I would describe my comfort style as Electronica, Synth-Pop and Shoegaze.",
-    carouselItems: [],
-    experience: [
-        ["Digital music composition", 3],
-        ["Sound design", 1],
-    ],
-    ExternalItems: undefined
-}
+// export const MusicCollection : Project = {
+//     name: "Music (Collection)",
+//     subtitle: "Listen in to some of my songs and jingles!",
+//     tags: [TAGS.NonGame],
+//     backgroundImage: "/images/Projects/Music.png",
+//     about: "Music production is a little hobby of mine! I have been producing music as a past-time for about 10 years. I've enjoyed exploring different styles, moods and purpoes. Occasionally I use my music for games I produce, though I am yet to commit myself to the craft professionally. I would describe my comfort style as Electronica, Synth-Pop and Shoegaze.",
+//     carouselItems: [],
+//     experience: [
+//         ["Digital music composition", 3],
+//         ["Sound design", 1],
+//     ],
+//     ExternalItems: undefined
+// }
 
 // export const PachinkoTutorial : Project = {
 //     name: "Pachinko Tutorial",
