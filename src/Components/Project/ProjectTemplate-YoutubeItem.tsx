@@ -11,8 +11,8 @@ function YoutubeItem(props : YoutubeItemProps) {
     }
   
     const opts: YouTubeProps['opts'] = {
-      height: '390',
-      width: '640',
+      height: "100%",
+      width: "100%",
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
         autoplay: 0,
@@ -20,7 +20,7 @@ function YoutubeItem(props : YoutubeItemProps) {
     };
   
     return (
-        <YouTube videoId={props.videoID} opts={opts} onReady={onPlayerReady} />
+        <YouTube videoId={props.videoID} opts={opts} onReady={onPlayerReady} style={{width:"100%", height:"100%"}}/>
     )
   }
 

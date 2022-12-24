@@ -50,7 +50,7 @@ function ProjectTemplate(project :Project) {
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <ProjectCarousel items={project.carouselItems!} h={useWindowDimensions().width < 900 ? 430/2 : 430}/>
+                    <ProjectCarousel items={project.carouselItems!} h={useWindowDimensions().width < 900 ? 430/1.5 : 430}/>
                 </Grid>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}

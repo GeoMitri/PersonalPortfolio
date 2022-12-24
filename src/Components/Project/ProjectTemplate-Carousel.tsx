@@ -13,7 +13,7 @@ interface ProjectCarouselProps {
 
 function ProjectCarousel(props : ProjectCarouselProps) {
     
-    const navHeight = props.h < 430 ? "30%" : "40%";
+    const navHeight = props.h < 430 ? "35%" : "40%";
 
     return(
     <Carousel
@@ -26,7 +26,7 @@ function ProjectCarousel(props : ProjectCarouselProps) {
         //indicators={false}
         navButtonsWrapperProps={{style:{height:100, top:navHeight}}}
         height={props.h}
-        sx={{height:{xs:430/2,md:430}, width:{xs:640/2, md:640}, margin:3, justifyContent:"center"}}
+        sx={{height:{xs:430/1.5,md:430}, width:{xs:640/1.5, md:640}, margin:3, justifyContent:"center"}}
         children={props.items}
         // <Box sx={{width:640, height:390}}>
     />
