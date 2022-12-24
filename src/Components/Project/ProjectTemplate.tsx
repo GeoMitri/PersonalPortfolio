@@ -29,9 +29,9 @@ function ProjectTemplate(project :Project) {
                 </Button>
             </Box>
 
-            <Grid container direction="row" margin={3}>
+            <Grid container direction="row">
                 
-                <Grid item xs={12} marginTop={5} display="flex" alignItems={"center"} direction="column">
+                <Grid item xs={12} marginTop={5} marginX={1} display="flex" alignItems={"center"} direction="column">
                     <Typography color={"neutral.dark"} variant="h1" fontWeight={"bold"} lineHeight={1.5}  justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
                     {project.name}
                     </Typography>
