@@ -8,10 +8,13 @@ import { ReactNode } from "react";
 
 interface ProjectCarouselProps {
     items : ReactNode[];
+    h: number
 }
 
 function ProjectCarousel(props : ProjectCarouselProps) {
     
+    const navHeight = props.h < 430 ? "30%" : "40%";
+
     return(
     <Carousel
         NextIcon={<NavigateNextIcon/>}
@@ -21,11 +24,10 @@ function ProjectCarousel(props : ProjectCarouselProps) {
         navButtonsAlwaysVisible
         indicatorContainerProps={{style:{marginTop:-5}}}
         //indicators={false}
-        navButtonsWrapperProps={{style:{height:100, top:145}}}
-        sx={{height:{xs:430/2,md:430}, width:{xs:640/2, md:640}, margin:3}}
-        children={
-            props.items
-        }
+        navButtonsWrapperProps={{style:{height:100, top:navHeight}}}
+        height={props.h}
+        sx={{height:{xs:430/2,md:430}, width:{xs:640/2, md:640}, margin:3, justifyContent:"center"}}
+        children={props.items}
         // <Box sx={{width:640, height:390}}>
     />
     )

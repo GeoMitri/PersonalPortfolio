@@ -7,6 +7,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
+import useWindowDimensions from "../../Objects/windowDimensions";
 
 
 /** Templaye used to construct pages for Project Instances*/
@@ -49,7 +50,7 @@ function ProjectTemplate(project :Project) {
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
-                    <ProjectCarousel items={project.carouselItems!}/>
+                    <ProjectCarousel items={project.carouselItems!} h={useWindowDimensions().width < 900 ? 430/2 : 430}/>
                 </Grid>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
