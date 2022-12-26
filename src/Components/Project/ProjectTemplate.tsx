@@ -31,7 +31,7 @@ function ProjectTemplate(project :Project) {
 
             <Grid container direction="row">
                 
-                <Grid item xs={12} marginTop={5} marginX={1} display="flex" alignItems={"center"} direction="column">
+                <Grid item xs={12} marginTop={7} marginX={1} display="flex" alignItems={"center"} direction="column" >
                     <Typography color={"neutral.dark"} variant="h1" fontWeight={"bold"} lineHeight={1.5}  justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
                     {project.name}
                     </Typography>
@@ -46,12 +46,12 @@ function ProjectTemplate(project :Project) {
 
                 </Grid>
 
-                <Grid container direction="row" paddingX={8}>
-
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
                     <ProjectCarousel items={project.carouselItems!} h={useWindowDimensions().width < 900 ? 430/1.5 : 430}/>
                 </Grid>
+
+                <Grid container direction="row" paddingX={8}>
 
                 <Grid container xs={12} sx={{backgroundColor:"neutral.light"}}
                 display="flex" direction="row" justifyContent="center" alignItems="center">
@@ -98,21 +98,19 @@ function ProjectTemplate(project :Project) {
                 <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                 <Grid container xs={3} sx={{minWidth:{xs:0,md:500}}} direction="row" justifyContent="space-around" alignItems="center">
 
-                    <Button size="large" href="/#/Projects" sx={{minWidth:180, margin:1}} variant="outlined" color="player2">
+                    <Button size="large" href="/#/Projects" sx={{minWidth:180, margin:1, marginBottom:{md:5}}} variant="outlined" color="player2">
                         <Typography color={"player2.main"}>
                             More Projects
                         </Typography>
                     </Button>
 
-                    <Button size="large" href="/#/Contact" variant="contained" color="player3" sx={{margin:1}}>
+                    <Button size="large" href="/#/Contact" variant="contained" color="player3" sx={{margin:1, marginBottom:5}}>
                         <Typography color={"neutral.light"}>
                             Contact
                         </Typography>
                     </Button>
                 </Grid>
                 </Grid>
-
-
             </Grid>
         </Box>
     )

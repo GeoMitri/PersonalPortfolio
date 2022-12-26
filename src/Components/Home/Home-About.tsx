@@ -12,9 +12,9 @@ const About =
             </Typography>
 
             <Typography variant="body1" marginBottom={4} m="auto" color={"neutral.dark"}> 
-                As a young boy in playgrounds and backyards, I was inventing new rules for handball, organising Nintendo DS tournaments with friends and toying with a bizarre program called <b>Unity</b>. Strangely, I am still doing the same thing today: Designing and developing games.
+                As a little boy playing in playgrounds and backyards, I was inventing new rules for handball, organising Nintendo DS tournaments with friends and toying with a bizarre program called <b>Unity</b>. Strangely, I am still doing the same thing today - designing and developing games.
                 <br/><br/>
-                My current design expertise is in <b>Serious Games</b>. I am fascinated by how games can propel players to achieve great things. "Fun" can help Mario reach Bowser's castle, and in the same way, it can teach students, train professionals or rehabilitate the impaired.
+                My current design expertise is in <a href="https://en.wikipedia.org/wiki/Serious_game" target="_blank" rel="noreferrer"><b>Serious Games</b></a>. I am truly fascinated by how games propel players to achieve great things. I have seen <i>fun</i> help Mario reach Bowser's castle, yet in the same way, it can teach students, train professionals and rehabilitate the impaired.
                 <br/><br/>
                 I have 3+ years of professional experience, designing and developing Serious Games with the University of Technology Sydney and Neurosicence Research Australia.
             </Typography>            

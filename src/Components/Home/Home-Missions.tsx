@@ -17,10 +17,16 @@ const Missions =
                 </Typography>  
             </ListItem>
             <ListItem>
-                <Typography variant="h3"> 
+                <Typography gutterBottom variant="h3"> 
                     Harness fun beyond entertainment.
                 </Typography>  
             </ListItem>
+            <ListItem>
+                <Typography gutterBottom variant="h3"> 
+                    Complete this rule of three.
+                </Typography>  
+            </ListItem>
+
         </List>
     </Box>
 </Grid>;

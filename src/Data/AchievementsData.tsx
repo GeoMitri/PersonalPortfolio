@@ -1,7 +1,7 @@
 const ACHIEVEMENTS: {key: string, desc: string}[] = [
     {
         key: 'Officially Qualified',
-        desc: 'Graduate with a Bachelor of Science in Games Development.',
+        desc: 'Graduate from the University of Technology Sydney with a Bachelor of Science in Games Development .',
     },
     {
         key: 'Mathematical!', 
