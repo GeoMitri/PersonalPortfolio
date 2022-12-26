@@ -24,17 +24,56 @@ Quick Reference
       refer to the object's "direction" prop
       need "container" prop (not "item")
     Consider "columnGap" / "rowGap" props for content spacing
+    Positioning elements freely
+      container
+        sx={{position: 'relative'}}
+      element
+        sx={{position: 'absolute', width: ..., top: ..., ...}}
+
+  <ToggleButtonGroup>
+    Doesn't like custom data types for value prop
+      Causes no colour to light up
+      Work around by using string as an index and performing other instructions in the onChange{} function.
 
   href
     external links need "https:// ..."
 
-Todo
+  props
+    Passing whole object with interface x a prop
+      <Component {...object}/>
+
+  Struturing Data folder
+    can export all consts separately OR
+    Make 1 const list of all values of types of value
+    
+  Function Compoment props
+    Parameters of Function Components are typically 1
+      This is what is expected if the FC is being instantiated elsewhere
+      Otherwise you get 1 level down of missing props
+    ALWAYS instantiate FCs like <This /> and not This()
+      Avoids "Rendered fewer hooks than expected" error
+        https://medium.com/@jonchurch/how-to-fix-react-error-rendered-fewer-hooks-than-expected-e6a378985d3c
+
+  types folder 
+    https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module
+    I need that file to use images as modules (import _ from _.jpg)
+
+TODO
+  Theme
+      Decision
+        #b5cee4 rgb(181, 206, 228)
+        #436cae rgb(67, 108, 174)
+        #8a8b99 rgb(138, 139, 153)
+        #cec9ce rgb(206, 201, 206)
+        #181718 rgb(24, 23, 24)
+  Create common objects
+      Button Row
+      Slideshow
+  Embedding
+      Projects via itch.io
+      ?Embed CV 
+  Remake some of my Projects
   Navbar
-    Add CV
-  Home
-    Section 1
-      Add a collage of my work in the background
-
-
-
-
+    CV Button
+    Contact Button
+  Contact on Home
