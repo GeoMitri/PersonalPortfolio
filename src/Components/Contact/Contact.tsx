@@ -10,9 +10,6 @@ import { useLocation } from 'react-router-dom';
 import { useLayoutEffect } from "react";
 
 
-/** My socials + email me via email.js 
- * TODO: Socials buttons
-*/
 function Contact() { 
 
     const location = useLocation();
