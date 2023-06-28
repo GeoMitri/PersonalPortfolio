@@ -40,6 +40,12 @@ export const GridBlade : Project = {
                 Short Paper
             </Typography>
         </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1MSAYDrDfmz_a7jrG8Xbc-AqfiWk-znIS/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>        
+            <Typography color={"neutral.light"}>
+                Design Proposal
+            </Typography>
+        </Button>
         <Button size="large" href="https://sorzee.itch.io/gridblade" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
             <SportsEsportsIcon/>        
             <Typography color={"neutral.light"}>
@@ -112,7 +118,20 @@ export const SmartStep : Project = {
         ["Learning from mistakes", 1],
         ["Data serialisation", 1],
     ],
-    ExternalItems: undefined
+    ExternalItems: <>
+        <Button size="large" href="https://neura.edu.au/news-media/media-releases/older-aussies-turn-to-video-games-to-improve-balance-and-brain-function" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Read More
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1vT31pzJeWVodoHMG67wSywTBn21pshLp/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Troubleshooting Guide
+            </Typography>
+        </Button>
+    </>
 }
 
 export const ChoiceStepper : Project = {
@@ -171,6 +190,7 @@ export const LastIsland : Project = {
     about: "Last Island is a cooperative digtally-assisted board game for 1-4 players whose mission is to sustain the last livable place on Earth. By taking turns in placing structure tiles on the field, players attempt balance population, environment health and production in order to maintain its society. The game was an accompaniment to a co-authored research paper which explores the possibilities of sustainable futures through play.",
     carouselItems: [
         <img src="/images/Projects/LastIsland/state1.jpg" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+        <img src="/images/Projects/LastIsland/l5.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/LastIsland/table.jpg" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/LastIsland/a.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/LastIsland/LastIslandLogo(2).png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
@@ -179,7 +199,7 @@ export const LastIsland : Project = {
         ["Data modelling and visualisation", 3],
         ["Collaboration on game design", 2],
         ["Adapting to research requirements", 2],
-        ["Playtesting for data collection", 1],
+        ["Playtesting for data collection", 2],
     ],
     ExternalItems: <>
         <Button size="large" href="https://dl.acm.org/doi/pdf/10.1145/3290688.3290746?casa_token=jpG8lzG1qTgAAAAA:ZeNq_i4uTvA9kmv40t4sLng08ZrCTZqrh9IF5rfaAk_PJz2knkrW35kqvJ02mQiuEUQ2sBw5DT8" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
@@ -198,6 +218,12 @@ export const LastIsland : Project = {
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Printouts
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/15wYMUg-w8QHDsIQA5qmgVT3dt-MxqtGK/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Player Questionnaire
             </Typography>
         </Button>
         <Button size="large" href="https://e9a96fb5-1520-448c-8f80-77dad0462b21.filesusr.com/archives/85ed56_e4264b7dca71453b97f8c23352bee6b6.zip?dn=Last%20Island%20Windows%20Edition.zip" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
@@ -232,7 +258,14 @@ export const DescendantOfSoul : Project = {
         ["Maintenance of team morale", 2],
         ["Humanoid animation", 1],
     ],
-    ExternalItems: undefined
+    ExternalItems: <>
+        <Button size="large" href="https://drive.google.com/file/d/1mSxvRLF6F5OQviDkiBclQnbNuBwi4xx9/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Design Pitch
+            </Typography>
+        </Button>
+    </>
 }
 
 export const GetMeOut : Project = {
@@ -256,6 +289,12 @@ export const GetMeOut : Project = {
         ["2D physics effectors", 1],
     ],
     ExternalItems: <>
+        <Button size="large" href="https://drive.google.com/file/d/13HzPOrqRqvRVL1Z6lZ64TsxlavpYBlqp/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Sprint Report
+            </Typography>
+        </Button>
         <Button size="large" href="https://drive.google.com/open?id=1y0-enKzeFqmb75_nWKY9N5vwgA2EEAYD" variant="contained" color="player2" sx={{margin:1}}>
             <SportsEsportsIcon/>
             <Typography color={"neutral.light"}>
@@ -267,12 +306,11 @@ export const GetMeOut : Project = {
 export const SpaceWars : Project = {
     name: "Space Wars",
     subtitle: "Blast your friends by firing projectiles in space.",
-    tags: [TAGS.ForFun],
+    tags: [TAGS.ForFun, TAGS.Playable],
     backgroundImage: "/images/Projects/SpaceWars/4player.png",
     about: "Space Wars is a multiplayer turn-based strategy game played in space. Each turn, players can either fire at their enemies, or blast themselves on another planet. One core element of the challenge is to fire projectiles guided by the orbit of surrounding planets. This was one of the first Unity games I completed in a group of students.",
     carouselItems: [
         <YoutubeItem videoID="tsTM33re0f4" />,
-        //<img src="/images/SpaceWars/4player.png" alt="broken"/>
     ],
     experience: [
         ["Effective playtesting", 3],
@@ -280,7 +318,20 @@ export const SpaceWars : Project = {
         ["Physical prototyping", 2],
         ["2D physics effectors", 1],
     ],
-    ExternalItems: undefined
+    ExternalItems: <>
+        <Button size="large" href="https://drive.google.com/file/d/1CtmSEtRkz7vro8b6Z7z5tkCj4VN6pgN8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+            <DownloadIcon/>
+            <Typography color={"neutral.light"}>
+                Download (Windows)
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1a_29aNhy9r6kUT8HKCgNjAUU0wDl5qrh/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Design Diary
+            </Typography>
+        </Button>
+    </>
 }
 
 export const WatchDesignerPro : Project = {
@@ -295,18 +346,41 @@ export const WatchDesignerPro : Project = {
     ],
     experience: [
         ["Communicating between a client and developers", 3],
+        ["Maintaining project documentation", 2],
         ["Mobile UI design and development", 2],
         ["Mesh deformation using BlendShapes", 2],
+        ["Jira and Confluence proficiency", 1],
         ["Business considerations for software", 1],
     ],
     ExternalItems: <>
-        <Button size="large" href="/#/Projects" variant="contained" color="player2" sx={{margin:1}}>
+        <Button size="large" href="https://drive.google.com/file/d/1aLBBqg2i99Eyq4Z4y-J5LsKOvJK-a-xA/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
-                Projects
+                Meeting Minutes
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1VpHeB-052alinuNEgRD_6alC4EJ3-bHu/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Design Diary
             </Typography>
         </Button>
     </>
-    
+}
+
+export const AcademicCollection : Project = {
+    //TODO
+    name: "Academic Collection",
+    subtitle: "My game design work as a tutor and academic at UTS.",
+    tags: [TAGS.NonGame],
+    backgroundImage: "/images/Projects/Music.png",
+    about: "Music production is a little hobby of mine! I have been producing music as a past-time for about 10 years. I've enjoyed exploring different styles, moods and purpoes. Occasionally I use my music for games I produce, though I am yet to commit myself to the craft professionally. I would describe my comfort style as Electronica, Synth-Pop and Shoegaze.",
+    carouselItems: [],
+    experience: [
+        ["Digital music composition", 3],
+        ["Sound design", 1],
+    ],
+    ExternalItems: undefined
 }
 
 // export const MusicCollection : Project = {

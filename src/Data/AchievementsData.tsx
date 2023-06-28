@@ -1,7 +1,7 @@
 const ACHIEVEMENTS: {key: string, desc: string}[] = [
     {
         key: 'Officially Qualified',
-        desc: 'Graduate from the University of Technology Sydney with a Bachelor of Science in Games Development .',
+        desc: 'Graduate from the University of Technology Sydney with a Bachelor of Science in Games Development.',
     },
     {
         key: 'Mathematical!', 
@@ -9,7 +9,7 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
     },
     {
         key: 'Sole Developer', 
-        desc: 'Release the puzzle game Stepping Stones on Android and iOS platforms in a solo team.'
+        desc: 'Release the puzzle game Stepping Stones on Android and iOS platforms as a solo team.'
     },
     {
         key: 'Serious About Fun', 
@@ -17,7 +17,11 @@ const ACHIEVEMENTS: {key: string, desc: string}[] = [
     },
     {
         key: 'Unified', 
-        desc: 'Develop games and interactive software using Unity3D for 8+ years.'
+        desc: 'Develop games and interactive software using Unity3D for 9+ years.'
+    },
+    {
+        key: 'Got Over It', 
+        desc: 'Beat the game "Getting Over It with Bennett Foddy".'
     },
     // {
     //     key: 'Learning Complete', 

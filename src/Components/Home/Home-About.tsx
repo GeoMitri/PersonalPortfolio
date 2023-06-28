@@ -16,7 +16,7 @@ const About =
                 <br/><br/>
                 My current design expertise is in <a href="https://en.wikipedia.org/wiki/Serious_game" target="_blank" rel="noreferrer"><b>Serious Games</b></a>. I am truly fascinated by how games propel players to achieve great things. I have seen <i>fun</i> help Mario reach Bowser's castle, yet in the same way, it can teach students, train professionals and rehabilitate the impaired.
                 <br/><br/>
-                I have 3+ years of professional experience, designing and developing Serious Games with the University of Technology Sydney and Neurosicence Research Australia.
+                I have 4+ years of professional experience, designing and developing Serious Games with the University of Technology Sydney and Neurosicence Research Australia.
             </Typography>            
         </Box>
     </Grid>;
