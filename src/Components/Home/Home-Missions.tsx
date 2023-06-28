@@ -23,7 +23,7 @@ const Missions =
             </ListItem>
             <ListItem>
                 <Typography gutterBottom variant="h3"> 
-                    Avoid AI redundancy.
+                    Concisely explain my job to my peers.
                 </Typography>  
             </ListItem>
 

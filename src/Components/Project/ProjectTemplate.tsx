@@ -32,11 +32,11 @@ function ProjectTemplate(project :Project) {
             <Grid container direction="row">
                 
                 <Grid item xs={12} marginTop={7} marginX={1} display="flex" alignItems={"center"} direction="column" >
-                    <Typography color={"neutral.dark"} variant="h1" fontWeight={"bold"} lineHeight={1.5}  justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
+                    <Typography align="center" color={"neutral.dark"} variant="h1" fontWeight={"bold"} lineHeight={1.5}  justifyContent={"center"} sx={{display: 'flex', flex: 1}}>
                     {project.name}
                     </Typography>
 
-                    <Typography variant="h4" gutterBottom> 
+                    <Typography align="center" variant="h4" gutterBottom> 
                         {project.subtitle}
                     </Typography>
  

@@ -2,10 +2,12 @@ import * as TAGS from "./ProjectTagsData";
 import {Project} from "../Objects/Interfaces";
 import YoutubeItem from "../Components/Project/ProjectTemplate-YoutubeItem";
 import Carousel from "react-material-ui-carousel";
-import { Button, Typography } from "@mui/material";
+import { Button, Card, Grid, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import { red } from "@mui/material/colors";
+import CollectionItem from "../Components/Project/ProjectTemplate-CollectionItem";
 
 const sizes = {
     xsH: 390/2,
@@ -289,7 +291,7 @@ export const GetMeOut : Project = {
         ["2D physics effectors", 1],
     ],
     ExternalItems: <>
-        <Button size="large" href="https://drive.google.com/file/d/13HzPOrqRqvRVL1Z6lZ64TsxlavpYBlqp/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+        <Button size="large" href="https://drive.google.com/file/d/1GoKre_UGTZ4HS6jPwFObusALHIHT1jj8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Sprint Report
@@ -369,18 +371,116 @@ export const WatchDesignerPro : Project = {
 }
 
 export const AcademicCollection : Project = {
-    //TODO
     name: "Academic Collection",
-    subtitle: "My game design work as a tutor and academic at UTS.",
+    subtitle: "Some of game design research and educational work at UTS.",
     tags: [TAGS.NonGame],
-    backgroundImage: "/images/Projects/Music.png",
-    about: "Music production is a little hobby of mine! I have been producing music as a past-time for about 10 years. I've enjoyed exploring different styles, moods and purpoes. Occasionally I use my music for games I produce, though I am yet to commit myself to the craft professionally. I would describe my comfort style as Electronica, Synth-Pop and Shoegaze.",
-    carouselItems: [],
-    experience: [
-        ["Digital music composition", 3],
-        ["Sound design", 1],
+    backgroundImage: "/images/Projects/AcademicCollection/ClassPamorama.JPG",
+    about: "As a tutor at the University of Technology, I produced a few items that explore game design without a developed game. I have them all bundled here.",
+    carouselItems: [
+        <img src="/images/Projects/AcademicCollection/ClassPamorama.JPG" style={{ objectFit: "cover", height:"100%", width:"100%" }} alt="broken" />,
     ],
-    ExternalItems: undefined
+    experience: [
+        ["Academic and professional communication", 2],
+        ["Game design philosophy", 2],
+        ["Empathy for learning experiences", 1],
+        ["Ambition to learn and educate", 1],
+    ],
+    ExternalItems: <>
+        <CollectionItem 
+        title={"Teaching Resources"} 
+        description={"As a UTS tutor and ambassador I was responsible for d3livering Unity design and development tutorals and workshops. My content has been delivered to undergraduate and postgraduate students, multimedia industry professionals and high school students."}
+        externalItems={
+            <>
+                <Button size="large" href="https://drive.google.com/file/d/1g-hTEVThHAmMj0XoKonI0Aih74AdOHIf/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                    <OpenInNewIcon/>
+                    <Typography color={"neutral.light"}>
+                        Playtesting: Common Mistakes
+                    </Typography>
+                </Button>
+                <Button size="large" href="https://drive.google.com/file/d/1gKYCmmXmckcYT-VCRLmIfyD_LKPTt3lO/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                    <OpenInNewIcon/>
+                    <Typography color={"neutral.light"}>
+                        Pachinko Tutorial
+                    </Typography>
+                </Button>
+                <Button size="large" href="https://docs.google.com/presentation/d/1CoLMt5Rz4eIQ22B9YkIlKkEfCpD7Nl_Z/edit?usp=sharing&ouid=102356558400890477406&rtpof=true&sd=true" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                    <OpenInNewIcon/>
+                    <Typography color={"neutral.light"}>
+                        3D Platforming Workshop
+                    </Typography>
+                </Button>
+            </>}
+        />
+        <CollectionItem 
+        title={"Resarch Project: Memories in Competitive Games"} 
+        description={"As more personal posessions become digitised, the significance of physical keepsake objects has been put into question. My research makes a comparison between physical items from sports and digital rewards in competitive digital games, and how their physical nature makes an impact on our memory recollection and sense of achievement."} 
+        externalItems={
+            <>
+                <Button size="large" href="https://drive.google.com/file/d/1CtmSEtRkz7vro8b6Z7z5tkCj4VN6pgN8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                    <OpenInNewIcon/>
+                    <Typography color={"neutral.light"}>
+                        Research Paper
+                    </Typography>
+                </Button>
+                <Button size="large" href="https://drive.google.com/file/d/1dT4S5TBdkVLiqrPBzGVanRxY1hnxU9UA/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                    <OpenInNewIcon/>
+                    <Typography color={"neutral.light"}>
+                        Poster
+                    </Typography>
+                </Button>
+            </>}
+        />
+    </>
+}
+
+export const ProjectBattle : Project = {
+    name: "Project Battle",
+    subtitle: "A WIP turn-based tactical game involving weapons, elements and friends.",
+    tags: [TAGS.ForFun],
+    backgroundImage: "/images/Projects/BattleParty/PBScreenshot1.png",
+    about: "Battleparty is a tactical turn-based game where 2-4 players engage in combat for team victory. Each character has their own weapons and spells but can gather more for a tailored and dynamic gameplay experience. Alongside game design documentation, a Unity networking prototype was built. This also included a card-printing pipeline, translating datasheets into a printable image format. After refining my career goals towards serious games, I decided to pause the project (reluctantly).",
+    carouselItems: [
+        <img src="/images/Projects/BattleParty/PBScreenshot1.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+        <img src="/images/Projects/BattleParty/image23.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+        <img src="/images/Projects/BattleParty/Characters+Ults.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+        <img src="/images/Projects/BattleParty/BPCardBacks.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+    ],
+    experience: [
+        ["Iterative prototyping cycles", 3],
+        ["Prototyping using Tabletop Simulator", 2],
+        ["Networking with industry professionals", 2],
+        ["Digital games market analysis and considerations", 2],
+        ["Unity UI for physical prototyping", 2],
+        ["Unity network progamming and architecture", 2],
+        ["Building custom editors in Unity for designers", 2],
+        ["3D Humanoid modelling, rigging and animation", 2],
+        ["Digital publishing prodecures", 1],
+        ["Player empathy", 1],
+        ["Considerations for prototyping mediums", 1],
+        ["Data collection", 1],
+        ["Community engagement", 1],
+        ["Use cases of markdown", 1],
+    ],
+    ExternalItems: <>
+        <Button size="large" href="https://docs.google.com/presentation/d/1NgSJI30H0DOfXR6d1FyzvkMWUZ78pEwJNNaFBVx7M-k/edit?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Quick Start Guide
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1-A3jmou0woooXiioapFcQ2LJs320ErA_/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Playtest Sample 1 
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1kU6SalQ_yqyY9LuSHcR45qoIXaPBJ67-/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Playtest Sample 2
+            </Typography>
+        </Button>
+    </>
 }
 
 // export const MusicCollection : Project = {
