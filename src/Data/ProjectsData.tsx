@@ -99,7 +99,7 @@ export const SmartStep : Project = {
     subtitle: "A collection of exergames training balance and fall prevention.",
     tags: [TAGS.Serious, TAGS.Commercial],
     backgroundImage: "/images/Projects/SmartStep/Linda-Step-Mat.png",
-    about: "Smart±Step is a collection of exergames played with a dance mat, designed to reduce falls risk in older people. After the systems were used for neuroscience research, the system needed to be updated and distributed for commercialisation. New features include multi-user support, automatic system updating, remote troubleshooting tools and a high score system. Now, Smart±Step is set up in 50+ aged care homes across Australia.",
+    about: "Smart±Step is a collection of exergames played with a dance mat, designed to reduce falls risk in ageing people. After the systems were used for neuroscience research, the system needed to be updated and distributed for commercialisation. New features include multi-user support, automatic system updating, remote troubleshooting tools and a high score system. Now, Smart±Step is set up in 50+ aged care homes across Australia.",
     carouselItems: [
         <img src="/images/Projects/SmartStep/MainMenu.png" height={390} width={640} alt="broken" />,
         <img src="/images/Projects/SmartStep/Linda-Step-Mat.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
@@ -141,7 +141,7 @@ export const ChoiceStepper : Project = {
     subtitle: "A research tool assessing reaction time in varied stimuli conditions.",
     tags: [TAGS.Serious],
     backgroundImage: "/images/Projects/CSRT/1.JPG",
-    about: "The Choice Stepper Reaction Time software a compilation of tasks used for researchers to test reaction times on participants' feet. Players step on arrows on a mat corresponding to instructions on screen. Variations include incongruence with distrating elements (e.g. a Left arrow labeled as \"Right\") and \"catcing\" arrows that fall with gravity. The project was once using legacy code, which prompted a decision to remake the software from scratch.",
+    about: "The Choice Stepper Reaction Time software a collection of sub-tasks used for researchers to test reaction times on participants' feet. Players step on arrows on a mat corresponding to instructions on screen. Variations include incongruence with distrating elements (e.g. a Left arrow labeled as \"Right\") and \"catcing\" arrows that fall with gravity. The project was once using legacy code, which prompted a decision to remake the software from scratch.",
     carouselItems: [
         <img src="/images/Projects/CSRT/0.JPG" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/CSRT/1.JPG" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
@@ -189,7 +189,7 @@ export const LastIsland : Project = {
     subtitle: "Save the planet from destruction using real sustainability models.",
     tags: [TAGS.Serious, TAGS.Favourite],
     backgroundImage: "/images/Projects/LastIsland/state1.jpg",
-    about: "Last Island is a cooperative digtally-assisted board game for 1-4 players whose mission is to sustain the last livable place on Earth. By taking turns in placing structure tiles on the field, players attempt balance population, environment health and production in order to maintain its society. The game was an accompaniment to a co-authored research paper which explores the possibilities of sustainable futures through play.",
+    about: "Last Island is a cooperative digtally-assisted board game for 1-4 players whose mission is to sustain the last livable place on Earth. By taking turns in placing structure tiles on the field, players attempt to balance population, environment health and production in order to maintain its society. The game was an accompaniment to a co-authored research paper which explores the possibilities of sustainable futures through play.",
     carouselItems: [
         <img src="/images/Projects/LastIsland/state1.jpg" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/LastIsland/l5.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
@@ -255,7 +255,7 @@ export const DescendantOfSoul : Project = {
         ["Scrum master for game developers and sound designers", 3],
         ["Scriptable Objects", 2],
         ["Procedural Animation", 2],
-        ["Customising the Unity Editor", 2],
+        ["Unity custom editors", 2],
         ["Handling feature creep", 2],
         ["Maintenance of team morale", 2],
         ["Humanoid animation", 1],
@@ -280,8 +280,8 @@ export const GetMeOut : Project = {
         <YoutubeItem videoID="b2gnY7oeugA" />
     ],
     experience: [
-        ["Agile user stories", 3],
-        ["Conflict resolution with divergent team members", 3],
+        ["Agile methodology and user stories", 3],
+        ["Team conflict resolution", 3],
         ["Task delegation", 2],
         ["Brainstorming techniques", 2],
         ["Game sound design", 2],
@@ -321,16 +321,16 @@ export const SpaceWars : Project = {
         ["2D physics effectors", 1],
     ],
     ExternalItems: <>
-        <Button size="large" href="https://drive.google.com/file/d/1CtmSEtRkz7vro8b6Z7z5tkCj4VN6pgN8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
-            <DownloadIcon/>
-            <Typography color={"neutral.light"}>
-                Download (Windows)
-            </Typography>
-        </Button>
         <Button size="large" href="https://drive.google.com/file/d/1a_29aNhy9r6kUT8HKCgNjAUU0wDl5qrh/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Design Diary
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/1CtmSEtRkz7vro8b6Z7z5tkCj4VN6pgN8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+            <DownloadIcon/>
+            <Typography color={"neutral.light"}>
+                Download (Windows)
             </Typography>
         </Button>
     </>
@@ -388,7 +388,7 @@ export const AcademicCollection : Project = {
     ExternalItems: <>
         <CollectionItem 
         title={"Teaching Resources"} 
-        description={"As a UTS tutor and ambassador I was responsible for d3livering Unity design and development tutorals and workshops. My content has been delivered to undergraduate and postgraduate students, multimedia industry professionals and high school students."}
+        description={"As a UTS tutor and ambassador I was responsible for delivering Unity design and development tutorals and workshops. My content has been delivered to undergraduate and postgraduate students, multimedia industry professionals and high school students."}
         externalItems={
             <>
                 <Button size="large" href="https://drive.google.com/file/d/1g-hTEVThHAmMj0XoKonI0Aih74AdOHIf/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
@@ -416,7 +416,7 @@ export const AcademicCollection : Project = {
         description={"As more personal posessions become digitised, the significance of physical keepsake objects has been put into question. My research makes a comparison between physical items from sports and digital rewards in competitive digital games, and how their physical nature makes an impact on our memory recollection and sense of achievement."} 
         externalItems={
             <>
-                <Button size="large" href="https://drive.google.com/file/d/1CtmSEtRkz7vro8b6Z7z5tkCj4VN6pgN8/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
+                <Button size="large" href="https://drive.google.com/file/d/1QFI6WVGWyGG1_0y3CM4vniYT_6xYTdUf/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}}>
                     <OpenInNewIcon/>
                     <Typography color={"neutral.light"}>
                         Research Paper
@@ -438,34 +438,41 @@ export const ProjectBattle : Project = {
     subtitle: "A WIP turn-based tactical game involving weapons, elements and friends.",
     tags: [TAGS.ForFun],
     backgroundImage: "/images/Projects/BattleParty/PBScreenshot1.png",
-    about: "Battleparty is a tactical turn-based game where 2-4 players engage in combat for team victory. Each character has their own weapons and spells but can gather more for a tailored and dynamic gameplay experience. Alongside game design documentation, a Unity networking prototype was built. This also included a card-printing pipeline, translating datasheets into a printable image format. After refining my career goals towards serious games, I decided to pause the project (reluctantly).",
+    about: "Project Battle is a prototype for a tactical turn-based game where 2-4 players engage in combat for team victory. Each character has their own weapons and spells but can gather more for a tailored and dynamic gameplay experience. Alongside game design documentation, a Unity networking prototype was built. This also included a card-printing pipeline, translating datasheets into a printable image format. After refining my career goals towards serious games, I reluctantly decided to shelve the project for the time being.",
     carouselItems: [
         <img src="/images/Projects/BattleParty/PBScreenshot1.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/BattleParty/image23.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
-        <img src="/images/Projects/BattleParty/Characters+Ults.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
+        <img src="/images/Projects/BattleParty/Characters+UltsNoArt.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
         <img src="/images/Projects/BattleParty/BPCardBacks.png" style={{ objectFit: "contain", height:"100%", width:"100%" }} alt="broken" />,
     ],
     experience: [
-        ["Iterative prototyping cycles", 3],
+        ["Iterative prototyping methodologies", 3],
         ["Prototyping using Tabletop Simulator", 2],
         ["Networking with industry professionals", 2],
-        ["Digital games market analysis and considerations", 2],
+        ["Digital games market analysis", 2],
         ["Unity UI for physical prototyping", 2],
+        ["Tabletop game UX", 2],
         ["Unity network progamming and architecture", 2],
-        ["Building custom editors in Unity for designers", 2],
-        ["3D Humanoid modelling, rigging and animation", 2],
-        ["Digital publishing prodecures", 1],
+        ["Unity custom editors", 2],
+        ["3D humanoid modelling, rigging and animation", 2],
+        ["Digital publishing and storefront requirements", 1],
         ["Player empathy", 1],
         ["Considerations for prototyping mediums", 1],
         ["Data collection", 1],
         ["Community engagement", 1],
-        ["Use cases of markdown", 1],
+        ["Markdown notation", 1],
     ],
     ExternalItems: <>
         <Button size="large" href="https://docs.google.com/presentation/d/1NgSJI30H0DOfXR6d1FyzvkMWUZ78pEwJNNaFBVx7M-k/edit?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Quick Start Guide
+            </Typography>
+        </Button>
+        <Button size="large" href="https://docs.google.com/spreadsheets/d/1iKXxFW5HaoAdzWcTGSBDosv8N3rgXLkEQZgnA5ILsDU/edit?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Design Pillars
             </Typography>
         </Button>
         <Button size="large" href="https://drive.google.com/file/d/1-A3jmou0woooXiioapFcQ2LJs320ErA_/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
