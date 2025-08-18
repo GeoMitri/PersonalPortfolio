@@ -41,7 +41,6 @@ export const Projects = () => {
 
 
     return (
-
         <Box bgcolor="neutral.light" sx={{display: 'flex', flexWrap: "nowrap"}}>
             <Grid container direction="row" justifyContent="flex-start" alignItems="left" margin={3}>
 

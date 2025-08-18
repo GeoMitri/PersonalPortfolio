@@ -8,23 +8,32 @@ const Missions =
 <Grid container direction="column" xs={12}>
     <Box>
         <Typography variant="h2" gutterBottom color={"player1.main"}> 
-            Missions
+            Career Missions
         </Typography>
         <List>
             <ListItem>
-                <Typography gutterBottom variant="h3"> 
-                    Create fun experiences.
+                <Typography gutterBottom variant="h3" sx={{paddingRight:1}}>
+                    Conjure
+                </Typography>
+                <Typography gutterBottom variant="body1" sx={{paddingRight:1}}> 
+                    fun experiences.
+                </Typography>
+            </ListItem>
+            <ListItem>
+                <Typography gutterBottom variant="h3" sx={{paddingRight:1}}> 
+                    Cultivate
+                </Typography>
+                <Typography gutterBottom variant="body1" sx={{paddingRight:1}}> 
+                    fun for personal, social and global good.
                 </Typography>  
             </ListItem>
             <ListItem>
-                <Typography gutterBottom variant="h3"> 
-                    Harness fun beyond entertainment.
-                </Typography>  
-            </ListItem>
-            <ListItem>
-                <Typography gutterBottom variant="h3"> 
-                    Concisely explain my job to my peers.
-                </Typography>  
+                <Typography gutterBottom variant="h3" sx={{paddingRight:1}}> 
+                    Catalyse
+                </Typography> 
+                <Typography gutterBottom variant="body1" sx={{paddingRight:1}}> 
+                    a people-first mindset with the many creative industries of the world
+                </Typography> 
             </ListItem>
 
         </List>

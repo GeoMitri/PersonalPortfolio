@@ -97,9 +97,9 @@ const ResponsiveAppBar = () => {
               ))}
             </Box>
 
-            <Button color='player4' disableElevation href="https://85ed56d9-cd9b-4ed8-8698-4dd032fdd33a.usrfiles.com/ugd/85ed56_53a919d2a7884c1d850f7e2d42719871.pdf" variant='contained' target="_blank" sx={{ my: 2, display: {xs: "none", md: 'block'}}}>
+            {/* <Button color='player4' disableElevation href="https://85ed56d9-cd9b-4ed8-8698-4dd032fdd33a.usrfiles.com/ugd/85ed56_53a919d2a7884c1d850f7e2d42719871.pdf" variant='contained' target="_blank" sx={{ my: 2, display: {xs: "none", md: 'block'}}}>
               Download CV
-            </Button>
+            </Button> */}
 
             {/* Mobile */}
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

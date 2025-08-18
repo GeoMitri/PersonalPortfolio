@@ -1,5 +1,9 @@
 Dev Docs
 
+    Snippets
+        tsx - react component
+        story - Storybook story template
+
     Project Conventions
         Folder structure
             components

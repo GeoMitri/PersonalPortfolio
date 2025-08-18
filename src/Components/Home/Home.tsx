@@ -28,9 +28,7 @@ export const Home = () => {
     return (
         
         <Box bgcolor="neutral.light" justifyContent={"center"} sx={{display:'flex', flexWrap: "nowrap"}}>
-
                 <BackToTopButton showThreshold={useWindowDimensions().height/4}/>
-
                 <Grid container direction="row" justifyContent="center" alignItems="center">
 
                     <Grid container xs={12} minHeight={700} justifyContent="center" alignItems="flex-start" height={useWindowDimensions().height-70} 

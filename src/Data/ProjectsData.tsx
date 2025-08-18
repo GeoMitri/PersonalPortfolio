@@ -181,7 +181,14 @@ export const SallysApples : Project = {
         ["Augmented Reality programming", 1],
         ["Lua programming", 1],
     ],
-    ExternalItems: undefined
+    ExternalItems: <>
+        <Button size="large" href="https://drive.google.com/file/d/1ZwFieTxeqDgH__CSVaPY62jFAPxCJgVg/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                User Manual
+            </Typography>
+        </Button>
+    </>
 }
 
 export const LastIsland : Project = {
@@ -463,7 +470,7 @@ export const ProjectBattle : Project = {
         ["Markdown notation", 1],
     ],
     ExternalItems: <>
-        <Button size="large" href="https://docs.google.com/presentation/d/1NgSJI30H0DOfXR6d1FyzvkMWUZ78pEwJNNaFBVx7M-k/edit?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+        <Button size="large" href="https://docs.google.com/presentation/d/1xs_FUGLxtsRwWrLHLt8LOW4CrX9-lZoirBc3-qL3TxQ/edit?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Quick Start Guide
@@ -473,6 +480,12 @@ export const ProjectBattle : Project = {
             <OpenInNewIcon/>
             <Typography color={"neutral.light"}>
                 Design Pillars
+            </Typography>
+        </Button>
+        <Button size="large" href="https://drive.google.com/file/d/18BqgwtWpXnsyDygh4QtgOQ2SLQ60ZWxS/view?usp=drive_link" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
+            <OpenInNewIcon/>
+            <Typography color={"neutral.light"}>
+                Dramatic Ideation Framework
             </Typography>
         </Button>
         <Button size="large" href="https://drive.google.com/file/d/1-A3jmou0woooXiioapFcQ2LJs320ErA_/view?usp=sharing" variant="contained" color="player2" target="_blank" sx={{margin:1}} >
